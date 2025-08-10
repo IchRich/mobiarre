@@ -175,4 +175,115 @@ section:first-of-type
 {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  border-bottom: 2px solid #999999;
+  padding: 10px 0;
+}
+.project:last-child {
+    border-bottom: none;
+}
+.project:first-of-type {
+    border-top: 2px solid #999999;
+}
+.projects h2 {
+    font-family: 'Exo 2';
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.project_info {
+    width: 35%;
+    position: relative;
+}
+
+.project_number {
+    font-family: 'Jost';
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 60px;
+}
+
+.project_title {
+    font-family: 'Exo 2';
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    line-height: 1;
+    color: #000000;
+}
+
+.project_description {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 100px;
+    color: #000000;
+}
+
+.project_link {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+    line-height: 1;
+}
+.project_link:hover {
+  text-decoration: underline;
+}
+.project_image_wrapper {
+    width: 60%;
+}
+
+.project_image_wrapper img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.project_image_caption {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #000000;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.projects_section {
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section_title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.projects_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.project_card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.project_image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 16px;
 }
