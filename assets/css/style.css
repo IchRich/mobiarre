@@ -270,8 +270,6 @@ section:first-of-type
 
 .project_card {
   background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -281,7 +279,7 @@ section:first-of-type
 .project_image {
   max-width: 100%;
   height: auto;
-  border-radius: 6px;
+  border-radius: 16px;
   margin-bottom: 16px;
 }
 
@@ -867,7 +865,7 @@ a.footer_developer  {
 .filters_section {
     display: flex;
     gap: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     flex-wrap: wrap;
 }
 
@@ -1212,4 +1210,130 @@ a.footer_developer  {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: -0.03em;
+}
+
+/* projects page */
+.projects_page {
+  padding-top: 150px;
+}
+.projects_header {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.projects_title {
+  font-family: 'Exo 2';
+  font-size: 70px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+}
+.projects_count {
+  font-family: 'Exo 2';
+  font-size: 24px;
+  font-weight: 600;
+  color: #808080;
+}
+.projects_grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 20px;
+  row-gap: 30px;
+}
+.project_card {
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.project_caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+.project_caption .project_name {
+   font-family:'Exo 2';
+   font-size:22px;
+   font-weight:600;
+   color:#000;
+  }
+.project_caption .project_location {
+  font-family:'Exo 2';
+  font-size:20px;
+  color:#808080;
+  font-weight: 500;
+}
+
+/* размеры */
+.project_large { grid-column: 7 / 13; height: 650px; }
+.project_small { grid-column: 1 / 5; height: 530px; }
+.project_medium { grid-column: 5 / 11; height: 530px; }
+
+/* размеры каждой карточки*/
+.projects_grid .project_card:nth-of-type(1) { grid-column: 1 / 5; }
+.projects_grid .project_card:nth-of-type(2) { grid-column: 7 / 13; height:695px;}
+.projects_grid .project_card:nth-of-type(3) { grid-column: 1 / 5; }
+.projects_grid .project_card:nth-of-type(4) { grid-column: 5 / 11; }
+.projects_grid .project_card:nth-of-type(5) { grid-column: 5 / 9; }
+.projects_grid .project_card:nth-of-type(6) { grid-column: 9 / 13; }
+.projects_grid .project_card:nth-of-type(7) { grid-column: 1 / 6; height:695px; }
+.projects_grid .project_card:nth-of-type(8) { grid-column: 9 / 13; align-self: flex-end;}
+
+.project_card:hover {
+  transform: translateY(-5px);
+}
+.project_image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.project_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.project_large {
+  grid-column: 1 / 7;
+  height: 650px;
+}
+.project_small {
+  grid-column: 9 / 13;
+  height: 530px;
+}
+.project_small:nth-of-type(3) { grid-column: 1 / 5; }
+.project_large:nth-of-type(4) { grid-column: 7 / 13; }
+.project_large:nth-of-type(5) { grid-column: 1 / 7; }
+.project_small:nth-of-type(6) { grid-column: 9 / 13; }
+.project_small:nth-of-type(7) { grid-column: 1 / 5; }
+.project_large:nth-of-type(8) { grid-column: 7 / 13; }
+
+.projects_titles {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  margin-bottom: 60px;
+}
+.project_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background-color: #ffffff;
+}
+.project_name {
+  font-family: 'Jost';
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+}
+.project_location {
+  font-family: 'Jost';
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
 }
