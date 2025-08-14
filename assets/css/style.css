@@ -10,6 +10,7 @@ body {
   background-color: #FFFFFF;
   color: #000000;
   line-height: 1.2;
+  overflow-x: hidden;
 }
 .container {
   width: 90%;
@@ -454,12 +455,13 @@ section:first-of-type
     text-align: center;
 }
 
-.blog_page .blog_title {
-    font-family: 'Exo 2';
-    font-size: 70px;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-bottom: 30px;
+.blog_title {
+  font-family: 'Exo 2';
+  font-size: 70px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  text-align: center;
 }
 
 .blog_list {
@@ -680,7 +682,7 @@ a.footer_developer  {
     font-family: 'Jost';
     font-size: 14px;
     color: #999999;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     font-weight: 400;
     display: flex;
     gap: 5px;
@@ -767,6 +769,7 @@ a.footer_developer  {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-top: 155px;
 }
 
 .category_card {
@@ -1157,13 +1160,10 @@ a.footer_developer  {
   padding-top: 150px;
   text-align: center;
 }
-.blog_title {
-  font-family: 'Exo 2';
-  font-size: 70px;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-bottom: 60px;
-  text-align: center;
+
+.blog_page .blog_title {
+    text-align: left;
+    margin-bottom: 30px;
 }
 .blog_grid {
   display: grid;
@@ -1336,4 +1336,115 @@ a.footer_developer  {
   font-size: 14px;
   font-weight: 400;
   color: #666666;
+}
+
+/* project style */
+.product_points
+{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* project page: align points to bottom */
+.product_info {
+  display: flex;
+  flex-direction: column;
+  min-height: 680px;
+}
+.product_points {
+  margin-top: auto;
+}
+
+/* full-width drag slider */
+.project_slider_section {
+  width: 100vw;
+}
+.project_slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 0 40px 10px;
+  column-gap: 20px;
+  scroll-behavior: smooth;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+/* на всякий случай скрываем возможные полосы */
+.project_slider::-webkit-scrollbar{ display: none; }
+.project_slider{ scrollbar-width: none; -ms-overflow-style: none; }
+.project_slide {
+  flex: 0 0 auto;
+  width: 560px;
+  height: 330px;
+  border-radius: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  background: #f3f3f3;
+}
+.project_slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .product_info { min-height: auto; }
+  .project_slider { padding: 0 20px 10px; }
+  .project_slide { width: 80vw; height: calc(80vw * 0.59); }
+}
+/* Добавьте эти стили в ваш CSS */
+.project_slider {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+  transition: scroll-behavior 0.3s ease;
+}
+
+.project_slider::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.project_slider.active {
+  cursor: grabbing;
+  scroll-snap-type: none; /* Отключаем притягивание во время перетаскивания */
+}
+
+.project_slide {
+  transition: transform 0.3s ease;
+}
+/* Для плавности при прилипании */
+.project_slider {
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+/* Состояния курсора */
+.project_slider {
+  cursor: grab;
+}
+
+.project_slider.active, 
+.project_slider.active * {
+  cursor: grabbing;
+}
+
+/* Блокировка выделения при перетаскивании */
+body.dragging {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+body.dragging * {
+  pointer-events: none !important;
+}
+
+.project_slider.active * {
+  pointer-events: auto;
 }
