@@ -116,3 +116,80 @@ document.addEventListener('DOMContentLoaded', () => {
   // Блокировка выделения текста
   slider.addEventListener('selectstart', (e) => isDown && e.preventDefault());
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const header = document.querySelector(".header");
+    const targetSections = document.querySelectorAll(".about_hero, .hero");
+
+    function checkHeaderVariant() {
+        let variant2 = false;
+
+        targetSections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            // Проверяем, видна ли хотя бы часть секции в верхней части экрана
+            if (rect.top <= 0 && rect.bottom > 0) {
+                variant2 = true;
+            }
+        });
+
+        header.classList.toggle("header--variant2", variant2);
+    }
+
+    window.addEventListener("scroll", checkHeaderVariant);
+    checkHeaderVariant();
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const header = document.querySelector(".header");
+    const targetSections = document.querySelectorAll(".about_hero, .hero");
+
+    function checkHeaderVariant() {
+        let variant2 = false;
+        targetSections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top <= 0 && rect.bottom > 0) {
+                variant2 = true;
+            }
+        });
+        header.classList.toggle("header--variant2", variant2);
+    }
+
+    window.addEventListener("scroll", checkHeaderVariant);
+    checkHeaderVariant();
+
+    // === Анимация появления блоков ===
+    const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animate-show");
+                obs.unobserve(entry.target); // Сработает только один раз
+            }
+        });
+    }, {
+        threshold: 0.1 // срабатывает, когда 10% блока видно
+    });
+
+    document.querySelectorAll(".animate-on-scroll").forEach(el => observer.observe(el));
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const header = document.querySelector(".header");
+    let lastScroll = 0;
+    const scrollTolerance = 5; // минимальное смещение, чтобы не дёргался
+
+    window.addEventListener("scroll", () => {
+        const currentScroll = window.pageYOffset;
+
+        if (Math.abs(currentScroll - lastScroll) <= scrollTolerance) return;
+
+        if (currentScroll > lastScroll && currentScroll > header.offsetHeight) {
+            // Скролл вниз — прячем хедер
+            header.style.transform = "translateY(-100%)";
+        } else {
+            // Скролл вверх — показываем хедер
+            header.style.transform = "translateY(0)";
+        }
+
+        lastScroll = currentScroll;
+    });
+});

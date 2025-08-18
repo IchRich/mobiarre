@@ -83,11 +83,76 @@ header
   transform: translateY(-100%);
   pointer-events: none;
 }
+/* Общие стили для плавного перехода */
+.header,
+.header_container,
+.header_link,
+.header_button {
+  transition: all 0.3s ease;
+}
+
+/* Вариация 1 (по умолчанию) */
+.header {
+  /* background: rgba(0,0,0,0.1); */
+}
+.header_container {
+  border-bottom: 1px solid #000000;
+}
+.header_link {
+  color: black;
+}
+.header_link:hover {
+  color: #6b4b3e; /* коричневый при ховере */
+}
+.header_button {
+  background-color: #6b4b3e; /* коричневый */
+  color: white;
+}
+.header_button:hover {
+  background-color: #52362c; /* темнее при ховере */
+}
+
+/* Вариация 2 */
+.header.header--variant2 {
+  background: transparent;
+}
+.header.header--variant2 .header_container {
+  border-bottom: 1px solid #ffffff;
+}
+.header.header--variant2 .header_link {
+  color: white;
+}
+.header.header--variant2 .header_link:hover {
+  color: #dddddd;
+}
+.header.header--variant2 .header_button {
+  background-color: white;
+  color: black;
+}
+.header.header--variant2 .header_button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Исходное состояние */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Когда блок стал видимым */
+.animate-show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 .hero
 {
   height: 100vh;
   padding-top: 12vh;
-  background-image: url(../img/herobanner.jpg);
+  /* background-image: url(../img/herobanner.jpg); */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   background-size: cover;
   background-position: center center;
 }
@@ -122,6 +187,65 @@ header
   line-height: 1.2;
   width: 30%;
 }
+.hero {
+    position: relative;
+    height: 100vh;
+    padding-top: 12vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+/* Фоновое видео */
+.hero .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Контент поверх */
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Заголовок */
+.hero h1 {
+    font-family: 'Exo 2';
+    font-size: 120px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.hero h1 p {
+    font-weight: 300;
+    color: #DEC1A3;
+    text-align: left;
+}
+
+.hero h1 b {
+    font-weight: 600;
+    color: #FFFFFF;
+    margin: auto;
+    text-align: right;
+}
+
+/* Описание */
+.hero_desc {
+    margin-top: 45vh;
+    color: #FFFFFF;
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    width: 30%;
+}
+
 .categories .container {
   display: flex;
   justify-content: space-between;
@@ -131,21 +255,20 @@ header
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  transition: width 0.3s ease, height 0.3s ease;
+  height: 622px;
+  width: 560px;
 }
-.category:nth-of-type(1) {
-  width: 415px;
-}
-.category:nth-of-type(2) {
+.category:hover
+{
   width: 850px;
-}
-.category:nth-of-type(3) {
-  width: 415px;
+  height: 90vh;
 }
 .img-container {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 622px;
+  height: 100%;
   border-radius: 16px;
 }
 .img-container img {
@@ -153,10 +276,6 @@ header
   height: 100%;
   object-fit: cover;
   display: block;
-}
-.category:nth-of-type(2) .img-container
-{
-  height: 899px;
 }
 .category p {
   margin-top: 15px;
@@ -674,7 +793,7 @@ a.footer_developer  {
 
 .category_main_content {
     flex: 1;
-    position: relative;
+    position: fixed;
     max-width: 450px;
 }
 
@@ -765,11 +884,11 @@ a.footer_developer  {
 }
 
 .categories_list {
-    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 20px;
     margin-top: 70px;
+    margin-left: auto;
 }
 
 .category_card {
@@ -1452,7 +1571,8 @@ body.dragging * {
 /* about page */
 .about_hero {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/backimage.png) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+   /* url(../img/backimage.png) center/cover no-repeat */
   display: flex;
   align-items: center;
   text-align: center;
@@ -1466,6 +1586,36 @@ body.dragging * {
   line-height: 1;
   width: 80%;
   margin: auto;
+}
+.about_hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.about_hero .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* как background-size: cover */
+    z-index: -1; /* отправляем за контент */
+}
+
+.about_hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.about_hero_title {
+    font-family: 'Exo 2';
+    font-size: 120px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #fff;
 }
 .accent_cream { color: #DEC1A3; }
 
