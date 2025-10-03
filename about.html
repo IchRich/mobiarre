@@ -11,124 +11,186 @@
 </head>
 <body>
   <header class="header">
-    <div class="container header_container">
-      <a href="index.html" class="header_logo"><img src="assets/img/logo.svg" alt="Mobiarre"></a>
-      <nav class="header_nav">
-        <a href="catalog.html" class="header_link">Каталог</a>
-        <a href="about.html" class="header_link">О компании</a>
-        <a href="projects.html" class="header_link">Наши проекты</a>
-        <a href="cooperation.html" class="header_link">Сотрудничество</a>
+  <div class="container header_container">
+    <a href="index.html" class="header_logo"><img src="assets/img/logo.svg" alt=""></a>
+    <nav class="header_nav">
+          <div class="header_dropdown">
+              <a href="catalog.html" class="header_link">Каталог <span class="dropdown_arrow"></span></a>
+              <div class="dropdown_menu">
+                  <a href="catalog.html?category=kitchens" class="dropdown_item">Кухни</a>
+                  <a href="catalog.html?category=living-rooms" class="dropdown_item">Гостиные</a>
+                  <a href="catalog.html?category=soft-furniture" class="dropdown_item">Мягкая мебель</a>
+              </div>
+          </div>
+          <div class="header_dropdown">
+              <a href="about.html" class="header_link">О компании<span class="dropdown_arrow"></span></a>
+              <div class="dropdown_menu">
+                  <a href="cooperation.html" class="dropdown_item">Сотрудничество</a>
+                  <a href="blog.html" class="dropdown_item">Блог</a>
+              </div>
+          </div>
+          <a href="projects.html" class="header_link">Наши проекты</a>
+          <a href="contacts.html" class="header_link">Контакты</a>
       </nav>
+    <div class="btns_group">
+      <a href="+73466424288" class="header_link">+7 (346) 642-42-88</a>
       <button class="header_button">Связаться с нами</button>
-    </div>
-  </header>
+   </div>
+  </div>
+</header>
 
 <section class="about_hero" aria-label="Дизайн, который вдохновляет">
-    <video class="bg-video" autoplay muted loop playsinline>
+    <video class="bg_video" autoplay muted loop playsinline>
         <source src="assets/video/corp.mp4" type="video/mp4">
     </video>
-    <div class="container">
-        <h1 class="about_hero_title animate-on-scroll">
-            ДИЗАЙН, КОТОРЫЙ 
-            <span class="accent_cream animate-on-scroll">ВДОХНОВЛЯЕТ</span>
+    <div class="container hero_section">
+      <div class="hero_arrow_container">
+        <h1 class="hero_desc animate_on_scroll">
+          О компании
         </h1>
+        <img class="hero_arrow" src="assets/img/arrow.svg" alt="">
+      </div>
     </div>
 </section>
 
 
-  <section class="about_intro">
-    <div class="container">
-      <p class="about_intro_text animate-on-scroll">Мы — студия дизайна интерьеров, где продуманный дизайн встречается с <span class="accent_brown">уютом</span> и <span class="accent_brown">функциональностью</span>. Специализируемся на создании кухонь и гостиных, отражающих ваш стиль и образ жизни. <span class="accent_brown">От идеи до воплощения</span> — сопровождаем каждый этап, чтобы вы получили не просто красивое, а по-настоящему комфортное пространство.</p>
-    </div>
-  </section>
+<section class="about_intro">
+  <div class="container">
+    <p class="about_intro_text animate_on_scroll">Мы — студия дизайна интерьеров, где продуманный дизайн встречается с <span class="accent_brown">уютом</span> и <span class="accent_brown">функциональностью</span>. Специализируемся на создании кухонь и гостиных, отражающих ваш стиль и образ жизни. <span class="accent_brown">От идеи до воплощения</span> — сопровождаем каждый этап, чтобы вы получили не просто красивое, а по-настоящему комфортное пространство.</p>
+  </div>
+</section>
 
-  <section class="about_metrics animate-on-scroll">
-    <div class="container about_metrics_grid">
-      <div class="about_metrics_left">
-        <div class="metrics_list">
-          <div class="metric">
-            <div class="metric_value">20 ЛЕТ</div>
-            <div class="metric_note">на рынке дизайна интерьеров</div>
-          </div>
-          <div class="metric">
-            <div class="metric_value">100%</div>
-            <div class="metric_note">довольных клиентов</div>
-          </div>
-          <div class="metric">
-            <div class="metric_value">&gt;200</div>
-            <div class="metric_note">реализованных проектов</div>
-          </div>
+<section class="about_metrics animate_on_scroll">
+  <div class="container about_metrics_grid">
+    <div class="about_metrics_left">
+      <div class="metrics_list">
+        <div class="metric">
+          <div class="metric_value">20 ЛЕТ</div>
+          <div class="metric_note">на рынке дизайна интерьеров</div>
         </div>
-        <div class="metrics_thumb">
-          <div class="thumb_image">
-            <img src="assets/img/kitchenfred.png" alt="Проект кухни">
-          </div>
-          <p class="thumb_caption">СОЗДАЁМ ПРОСТРАНСТВО, В КОТОРОЕ ХОЧЕТСЯ ВОЗВРАЩАТЬСЯ</p>
+        <div class="metric">
+          <div class="metric_value">100%</div>
+          <div class="metric_note">довольных клиентов</div>
+        </div>
+        <div class="metric">
+          <div class="metric_value">&gt;200</div>
+          <div class="metric_note">реализованных проектов</div>
         </div>
       </div>
+    </div>
 
-      <div class="about_metrics_right">
-        <div class="hero_photo">
-          <img src="assets/img/kitchenfred2.png" alt="Пример проекта">
+    <div class="about_metrics_right">
+      <div class="hero_photo">
+        <img src="assets/img/kitchenfred2.png" alt="Пример проекта">
+      </div>
+    </div>
+
+  </div>
+  <div class="container about_metrics_grid">
+        <div class="thumb_image">
+          <img src="assets/img/kitchenfred.png" alt="Проект кухни">
         </div>
+    <div class="metrics_thumb">
         <h3 class="right_title">Мы создаём уютные пространства, опираясь на честность, качество и уважение к каждому клиенту.</h3>
-        <div class="right_points">
-          <p>Мы строго соблюдаем сроки и условия, обеспечивая исключительное обслуживание и уважение к времени клиента.</p>
-          <p>Сохраняя прозрачность процессов, мы открыто обсуждаем детали, чтобы результат радовал долгие годы.</p>
-          <p>Наша ответственность не ограничивается моментом сдачи — мы поддерживаем клиентов на всех этапах.</p>
-        </div>
+      <div class="right_points">
+        <p>Мы строго соблюдаем сроки и условия, обеспечивая исключительное обслуживание и уважение к времени клиента.</p>
+        <p>Сохраняя прозрачность процессов, мы открыто обсуждаем детали, чтобы результат радовал долгие годы.</p>
+        <p>Наша ответственность не ограничивается моментом сдачи — мы поддерживаем клиентов на всех этапах.</p>
       </div>
-
+        <p class="thumb_caption">СОЗДАЁМ ПРОСТРАНСТВО, В КОТОРОЕ ХОЧЕТСЯ ВОЗВРАЩАТЬСЯ</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="turnkey animate-on-scroll">
-    <div class="container">
-      <h2 class="turnkey_title">ПОЛНАЯ КОМПЛЕКТАЦИЯ ПОД КЛЮЧ</h2>
-      <div class="turnkey_content">
-        <div class="turnkey_description">
+<section class="coop_certs">
+  <div class="container">
+    <h2 class="coop_section_title animate_on_scroll">СЕРТИФИКАТЫ</h2>
+    <div class="coop_cert_grid animate_on_scroll" id="certGrid" aria-live="polite">
+      <div class="coop_cert" aria-label="Сертификат 1"><img src="assets/img/sertificate.png" alt=""></div>
+      <div class="coop_cert" aria-label="Сертификат 2"><img src="assets/img/sertificate.png" alt=""></div>
+      <div class="coop_cert" aria-label="Сертификат 3"><img src="assets/img/sertificate.png" alt=""></div>
+      <div class="coop_cert" aria-label="Сертификат 4"><img src="assets/img/sertificate.png" alt=""></div>
+    </div>
+    <div class="load_more_section">
+      <button class="load_more_button" type="button">Загрузить еще</button>
+    </div>
+  </div>
+</section>
+
+<section class="about_coop">
+  <div class="container">
+    <h2>О сотрудничестве</h2>
+    <div class="coop_group">
+      <div class="coop_text">
+        <p>Мы открыты к партнёрству с дизайнерами, архитекторами, застройщиками, производителями мебели и декора. Наша компания ценит надёжность, качество и творческий подход, поэтому мы всегда рады новым идеям и совместным проектам. Для партнёров мы предлагаем специальные условия, индивидуальное сопровождение и возможности для долгосрочного взаимодействия.</p>
+        <button class="btn_transparent">Подробнее о сотрудничестве</button>
+      </div> 
+      <div class="coop_image">
+        <img src="assets/img/coop.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="turnkey">
+  <div class="container">
+    <h2 class="turnkey_title animate_on_scroll">Полная комплектация под ключ</h2>
+    <div class="turnkey_content animate_on_scroll">
+      <div class="turnkey_description">
           <p>Мы обеспечиваем все этапы создания интерьера — от дизайна до реализации. Подберем материалы, мебель и аксессуары, чтобы ваш проект был завершённым и функциональным. Также у нас предусмотрена рассрочка на все виды услуг!</p>
-        </div>
-        <form class="turnkey_form">
-          <div class="form_group"><input type="text" placeholder="Ваше имя" required></div>
-          <div class="form_group"><input type="tel" placeholder="Ваш телефон" required></div>
-          <div class="check"><input type="checkbox" required><p class="privacy_policy">Отправляя форму, я соглашаюсь с политикой конфиденциальности</p></div>
-          <button class="form_button" type="submit">Связаться с нами</button>
-        </form>
+          <span>
+            <p class="text_social">напишите нам</p>
+            <a href=""><img src="assets/img/instIcon.svg" alt=""></a>
+            <a href=""><img src="assets/img/telegramIcon.svg" alt=""></a>
+            <a href=""><img src="assets/img/WhatsAppIcon.svg" alt=""></a>
+          </span>
       </div>
+      <form class="turnkey_form">
+          <div class="form_group">
+              <input type="text" id="name" placeholder="Ваше имя" required>
+          </div>
+          <div class="form_group">
+              <input type="tel" id="phone" placeholder="Ваш телефон" required>
+          </div>
+          <div class="check">
+            <input type="checkbox" required><p class="privacy_policy">Отправляя форму, я соглашаюсь с политикой конфиденциальности</p>
+          </div>
+          <button type="submit" class="form_button">Связаться с нами</button>
+      </form>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer class="footer">
-    <div class="container footer_container">
-      <div class="footer_top">
-        <div class="logo_privacy_container">
-          <a href="index.html" class="footer_logo"><img src="assets/img/logo.svg" alt="Mobiarre"></a>
-          <a href="privacy.html" class="footer_privacy_link">Политика конфиденциальности</a>
-        </div>
-        <nav class="footer_nav">
-          <a href="catalog.html" class="footer_link">Каталог</a>
-          <a href="about.html" class="footer_link">О компании</a>
-          <a href="projects.html" class="footer_link">Наши проекты</a>
-        </nav>
-        <nav class="footer_nav">
-          <a href="blog.html" class="footer_link">Блог</a>
-          <a href="#contacts" class="footer_link">Контакты</a>
-          <a href="cooperation.html" class="footer_link">Сотрудничество</a>
-        </nav>
-        <div class="footer_socials">
-          <a href="#" class="footer_link">Whatsapp</a>
-          <a href="#" class="footer_link">Telegram</a>
-          <a href="#" class="footer_link">Instagram</a>
-          <a class="footer_developer" href="https://kant.studio" target="_blank">
-            <span>Разработка сайта:</span>
-            <img src="assets/img/KantLogo.svg" alt="KANT Studio">
-          </a>
-        </div>
+<footer class="footer">
+  <div class="container footer_container">
+    <div class="footer_top">
+      <div class="logo_privacy_container">
+        <a href="index.html" class="footer_logo"><img src="assets/img/logo.svg" alt="Mobiarre"></a>
+        <a href="privacy.html" class="footer_privacy_link">Политика конфиденциальности</a>
       </div>
-      <div class="footer_bottom"></div>
+      <nav class="footer_nav">
+        <a href="catalog.html" class="footer_link">Каталог</a>
+        <a href="about.html" class="footer_link">О компании</a>
+        <a href="projects.html" class="footer_link">Наши проекты</a>
+      </nav>
+      <nav class="footer_nav">
+        <a href="blog.html" class="footer_link">Блог</a>
+        <a href="#contacts" class="footer_link">Контакты</a>
+        <a href="cooperation.html" class="footer_link">Сотрудничество</a>
+      </nav>
+      <div class="footer_socials">
+        <a href="#" class="footer_link">Whatsapp</a>
+        <a href="#" class="footer_link">Telegram</a>
+        <a href="#" class="footer_link">Instagram</a>
+        <a class="footer_developer" href="https://kant.studio" target="_blank">
+          <span>Разработка сайта:</span>
+          <img src="assets/img/KantLogo.svg" alt="KANT Studio">
+        </a>
+      </div>
     </div>
-  </footer>
-    <script src="assets/js/script.js"></script>
+    <div class="footer_bottom"></div>
+  </div>
+</footer>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

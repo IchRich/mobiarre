@@ -14,18 +14,58 @@
     <div class="container header_container">
       <a href="index.html" class="header_logo"><img src="assets/img/logo.svg" alt="Mobiarre"></a>
       <nav class="header_nav">
-        <a href="catalog.html" class="header_link">Каталог</a>
-        <a href="about.html" class="header_link">О компании</a>
+        <div class="header_dropdown">
+            <a href="catalog.html" class="header_link">Каталог <span class="dropdown_arrow"></span></a>
+            <div class="dropdown_menu">
+                <a href="catalog.html?category=kitchens" class="dropdown_item">Кухни</a>
+                <a href="catalog.html?category=living-rooms" class="dropdown_item">Гостиные</a>
+                <a href="catalog.html?category=soft-furniture" class="dropdown_item">Мягкая мебель</a>
+            </div>
+        </div>
+        <div class="header_dropdown">
+            <a href="about.html" class="header_link">О компании<span class="dropdown_arrow"></span></a>
+            <div class="dropdown_menu">
+                <a href="cooperation.html" class="dropdown_item">Сотрудничество</a>
+                <a href="blog.html" class="dropdown_item">Блог</a>
+            </div>
+        </div>
         <a href="projects.html" class="header_link">Наши проекты</a>
-        <a href="about.html" class="header_link">Сотрудничество</a>
+        <a href="contacts.html" class="header_link">Контакты</a>
       </nav>
-      <button class="header_button">Связаться с нами</button>
+      <div class="btns_group">
+        <a href="+73466424288" class="header_link">+7 (346) 642-42-88</a>
+        <button class="header_button">Связаться с нами</button>
+      </div>
     </div>
   </header>
 
-  <section class="product_page animate-on-scroll">
+  <section class="product_page">
     <div class="container">
+        <div class="breadcrumbs">
+            <a href="index.html">Главная</a> <span class="crumb_sep"></span> <a href="catalog.html">Каталог</a> <span class="crumb_sep"></span> <a href="modern.html">Современный стиль</a> <span class="crumb_sep"></span> <span>Кухни Фьоджи</span>
+        </div>
       <div class="product_top">
+        <div class="product_info">
+          <h1 class="product_title_main">КУХНИ ФЬЮДЖИ</h1>
+          <p class="product_description">Фьоджи — это архитектура кухни, вдохновленная чувственностью японского мастерства. Особенностью дизайна является планировочный подход, заключающийся в наличии асимметрических ребер, ручек и цельного двера в выдвижных ящиках. В результате формируется сдержанная минималистичная композиция, обладающая неповторимым японским шармом, легкая и воздушная, которая гармонично интегрируется в любой дом или квартиру, независимо от местоположения.</p>
+
+          <div class="product_specs">
+            <div class="product_spec_row">
+              <span class="product_spec_label">Стиль</span>
+              <span class="product_spec_value">Современная, Минимализм, Джапанди</span>
+            </div>
+            <div class="product_spec_row">
+              <span class="product_spec_label">Материалы</span>
+              <span class="product_spec_value">Шпон, Массив дерева</span>
+            </div>
+            <div class="product_spec_row">
+              <span class="product_spec_label">Древесина</span>
+              <span class="product_spec_value">Дуб, ясень</span>
+            </div>
+          </div>
+
+          <button class="product_button" type="button">Оставить заявку</button>
+        </div>
         <div class="product_gallery">
           <div class="product_main_image">
             <img src="assets/img/kitchen.jpg" alt="Кухни Фьоджи — главное фото">
@@ -52,35 +92,32 @@
           </div>
         </div>
 
-        <div class="product_info">
-          <h1 class="product_title_main">КУХНИ ФЬЮДЖИ</h1>
-          <p class="product_description">Фьоджи — это архитектура кухни, вдохновленная чувственностью японского мастерства. Особенностью дизайна является планировочный подход, заключающийся в наличии асимметрических ребер, ручек и цельного двера в выдвижных ящиках. В результате формируется сдержанная минималистичная композиция, обладающая неповторимым японским шармом, легкая и воздушная, которая гармонично интегрируется в любой дом или квартиру, независимо от местоположения.</p>
 
-          <div class="product_specs">
-            <div class="product_spec_row">
-              <span class="product_spec_label">Стиль</span>
-              <span class="product_spec_value">Современная, Минимализм, Джапанди</span>
-            </div>
-            <div class="product_spec_row">
-              <span class="product_spec_label">Материалы</span>
-              <span class="product_spec_value">Шпон, Массив дерева</span>
-            </div>
-            <div class="product_spec_row">
-              <span class="product_spec_label">Древесина</span>
-              <span class="product_spec_value">Дуб, ясень</span>
-            </div>
-          </div>
-
-          <button class="product_button" type="button">Оставить заявку</button>
-        </div>
       </div>
     </div>
   </section>
-
+  <!-- Модальное окно со слайдером -->
+  <div class="modal_overlay" id="modalOverlay">
+    <div class="modal_content">
+      
+      <!-- Основной слайдер -->
+      <div class="modal_slider">
+        <button class="slider_arrow slider_arrow_prev" id="prevSlide"></button>
+        <div class="modal_slide_container"><img class="modal_slide_image" id="modalSlideImage" src="" alt="Слайд проекта"></div>
+        <button class="slider_arrow slider_arrow_next" id="nextSlide"></button>
+      </div>
+      
+      <!-- Нижняя панель: название проекта + миниатюры -->
+      <div class="modal_footer">
+        <div class="modal_project_title" id="modalProjectTitle"></div>
+        <div class="modal_thumbnails" id="modalThumbnails"></div>
+      </div>
+    </div>
+  </div>
   <section class="related">
     <div class="container">
-      <h2 class="related_title animate-on-scroll">СМОТРИТЕ ТАКЖЕ</h2>
-      <div class="related_list animate-on-scroll">
+      <h2 class="related_title animate_on_scroll">СМОТРИТЕ ТАКЖЕ</h2>
+      <div class="related_list animate_on_scroll">
         <article class="related_card">
           <div class="related_image">
             <img src="assets/img/kitchNatali.png" alt="Кухни Натали">

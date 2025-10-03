@@ -11,27 +11,46 @@
 </head>
 <body>
   <header class="header">
-    <div class="container header_container">
-      <a href="index.html" class="header_logo"><img src="assets/img/logo.svg" alt="Mobiarre"></a>
-      <nav class="header_nav">
-        <a href="catalog.html" class="header_link">Каталог</a>
-        <a href="about.html" class="header_link">О компании</a>
-        <a href="projects.html" class="header_link">Наши проекты</a>
-        <a href="about.html" class="header_link">Сотрудничество</a>
-      </nav>
+  <div class="container header_container">
+    <a href="index.html" class="header_logo"><img src="assets/img/logo.svg" alt="Mobiarre"></a>
+    <nav class="header_nav">
+      <div class="header_dropdown">
+          <a href="catalog.html" class="header_link">Каталог <span class="dropdown_arrow"></span></a>
+          <div class="dropdown_menu">
+              <a href="catalog.html?category=kitchens" class="dropdown_item">Кухни</a>
+              <a href="catalog.html?category=living-rooms" class="dropdown_item">Гостиные</a>
+              <a href="catalog.html?category=soft-furniture" class="dropdown_item">Мягкая мебель</a>
+          </div>
+      </div>
+      <div class="header_dropdown">
+          <a href="about.html" class="header_link">О компании<span class="dropdown_arrow"></span></a>
+          <div class="dropdown_menu">
+              <a href="cooperation.html" class="dropdown_item">Сотрудничество</a>
+              <a href="blog.html" class="dropdown_item">Блог</a>
+          </div>
+      </div>
+      <a href="projects.html" class="header_link">Наши проекты</a>
+      <a href="contacts.html" class="header_link">Контакты</a>
+    </nav>
+    <div class="btns_group">
+      <a href="+73466424288" class="header_link">+7 (346) 642-42-88</a>
       <button class="header_button">Связаться с нами</button>
     </div>
-  </header>
+  </div>
+</header>
 
   <section class="projects_page">
     <div class="container">
-      <div class="projects_header animate-on-scroll">
+      <div class="breadcrumbs">
+        <a href="index.html">Главная</a> <span class="crumb_sep"></span> <span>Наши проекты</span>
+      </div>
+      <div class="projects_header animate_on_scroll">
         <h1 class="projects_title">НАШИ ПРОЕКТЫ</h1>
         <span class="projects_count">21</span>
       </div>
       
-      <div class="projects_grid animate-on-scroll">
-        <div class="project_card project_small">
+      <div class="projects_grid animate_on_scroll">
+        <div class="project_card project_small" onclick="window.location.href='project.html'">
           <div class="project_image">
             <img src="assets/img/kitchenfred.png" alt="Кухни Фреда">
           </div>
@@ -106,33 +125,40 @@
       </div>
 
       <div class="load_more_section">
-        <button class="load_more_button animate-on-scroll">Загрузить еще</button>
+        <button class="load_more_button animate_on_scroll">Загрузить еще</button>
       </div>
     </div>
   </section>
 
-<section class="turnkey animate-on-scroll">
-    <div class="container">
-      <h2 class="turnkey_title">Полная комплектация под ключ</h2>
-      <div class="turnkey_content">
-        <div class="turnkey_description">
-            <p>Мы обеспечиваем все этапы создания интерьера — от дизайна до реализации. Подберем материалы, мебель и аксессуары, чтобы ваш проект был завершённым и функциональным. Также у нас предусмотрена рассрочка на все виды услуг!</p>
-        </div>
-        <form class="turnkey_form">
-            <div class="form_group">
-                <input type="text" id="name" placeholder="Ваше имя" required>
-            </div>
-            <div class="form_group">
-                <input type="tel" id="phone" placeholder="Ваш телефон" required>
-            </div>
-            <div class="check">
-              <input type="checkbox" required><p class="privacy_policy">Отправляя форму, я соглашаюсь с политикой конфиденциальности</p>
-            </div>
-            <button type="submit" class="form_button">Связаться с нами</button>
-        </form>
+  <section class="turnkey">
+  <div class="container">
+    <h2 class="turnkey_title animate_on_scroll">Полная комплектация под ключ</h2>
+    <div class="turnkey_content animate_on_scroll">
+      <div class="turnkey_description">
+          <p>Мы обеспечиваем все этапы создания интерьера — от дизайна до реализации. Подберем материалы, мебель и аксессуары, чтобы ваш проект был завершённым и функциональным. Также у нас предусмотрена рассрочка на все виды услуг!</p>
+          <span>
+            <p class="text_social">напишите нам</p>
+            <a href=""><img src="assets/img/instIcon.svg" alt=""></a>
+            <a href=""><img src="assets/img/telegramIcon.svg" alt=""></a>
+            <a href=""><img src="assets/img/WhatsAppIcon.svg" alt=""></a>
+          </span>
       </div>
+      <form class="turnkey_form">
+          <div class="form_group">
+              <input type="text" id="name" placeholder="Ваше имя" required>
+          </div>
+          <div class="form_group">
+              <input type="tel" id="phone" placeholder="Ваш телефон" required>
+          </div>
+          <div class="check">
+            <input type="checkbox" required><p class="privacy_policy">Отправляя форму, я соглашаюсь с политикой конфиденциальности</p>
+          </div>
+          <button type="submit" class="form_button">Связаться с нами</button>
+      </form>
     </div>
-  </section>
+  </div>
+
+</section>
 
   <footer class="footer">
     <div class="container footer_container">

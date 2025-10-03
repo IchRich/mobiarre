@@ -11,23 +11,40 @@
 </head>
 <body>
     <header class="header">
-        <div class="container header_container">
-            <a href="index.html" class="header_logo"><img src="assets/img/logo.svg" alt="Mobiarre"></a>
-            <nav class="header_nav">
-                <a href="catalog.html" class="header_link">Каталог</a>
-                <a href="about.html" class="header_link">О компании</a>
-                <a href="projects.html" class="header_link">Наши проекты</a>
-                <a href="about.html" class="header_link">Сотрудничество</a>
-            </nav>
-            <button class="header_button">Связаться с нами</button>
+    <div class="container header_container">
+      <a href="index.html" class="header_logo"><img src="assets/img/logo.svg" alt="Mobiarre"></a>
+      <nav class="header_nav">
+        <div class="header_dropdown">
+            <a href="catalog.html" class="header_link">Каталог <span class="dropdown_arrow"></span></a>
+            <div class="dropdown_menu">
+                <a href="catalog.html?category=kitchens" class="dropdown_item">Кухни</a>
+                <a href="catalog.html?category=living-rooms" class="dropdown_item">Гостиные</a>
+                <a href="catalog.html?category=soft-furniture" class="dropdown_item">Мягкая мебель</a>
+            </div>
         </div>
-    </header>
+        <div class="header_dropdown">
+            <a href="about.html" class="header_link">О компании<span class="dropdown_arrow"></span></a>
+            <div class="dropdown_menu">
+                <a href="cooperation.html" class="dropdown_item">Сотрудничество</a>
+                <a href="blog.html" class="dropdown_item">Блог</a>
+            </div>
+        </div>
+        <a href="projects.html" class="header_link">Наши проекты</a>
+        <a href="contacts.html" class="header_link">Контакты</a>
+      </nav>
+      <div class="btns_group">
+        <a href="+73466424288" class="header_link">+7 (346) 642-42-88</a>
+        <button class="header_button">Связаться с нами</button>
+      </div>
+    </div>
+  </header>
 
-    <section class="category_page animate-on-scroll">
+    <section class="category_page">
         <div class="container category_page_container">
+            
             <div class="category_main_content">
-                  <div class="breadcrumbs">
-                        <a href="index.html">Главная</a> > <span>Гостиные</span>
+                <div class="breadcrumbs">
+                        <a href="index.html">Главная</a> <span class="crumb_sep"></span> <span>Гостиные</span>
                     </div>
                 
                 <h1 class="category_main_title">ГОСТИНЫЕ</h1>
@@ -36,7 +53,7 @@
                 
                 <div class="city_selector">
                     Выберите город: 
-                    <span class="city_dropdown">Москва</span>
+                    <span class="city_dropdown">Санкт-Петербург</span>
                 </div>
                 
                 <button class="catalog_button">Перейти в каталог</button>
