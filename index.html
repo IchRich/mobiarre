@@ -10,34 +10,35 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header class="header">
-    <div class="container header_container">
-      <a href="index.html" class="header_logo"><img src="assets/img/logo.svg" alt=""></a>
-      <nav class="header_nav">
-            <div class="header_dropdown">
-                <a href="catalog.html" class="header_link">Каталог <span class="dropdown_arrow"></span></a>
-                <div class="dropdown_menu">
-                    <a href="catalog.html?category=kitchens" class="dropdown_item">Кухни</a>
-                    <a href="catalog.html?category=living-rooms" class="dropdown_item">Гостиные</a>
-                    <a href="catalog.html?category=soft-furniture" class="dropdown_item">Мягкая мебель</a>
-                </div>
-            </div>
-            <div class="header_dropdown">
-                <a href="about.html" class="header_link">О компании<span class="dropdown_arrow"></span></a>
-                <div class="dropdown_menu">
-                    <a href="cooperation.html" class="dropdown_item">Сотрудничество</a>
-                    <a href="blog.html" class="dropdown_item">Блог</a>
-                </div>
-            </div>
-            <a href="projects.html" class="header_link">Наши проекты</a>
-            <a href="contacts.html" class="header_link">Контакты</a>
-        </nav>
-      <div class="btns_group">
-        <a href="+73466424288" class="header_link">+7 (346) 642-42-88</a>
-     <button class="header_button">Связаться с нами</button>
-     </div>
-    </div>
-  </header>
+<header class="header">
+  <div class="container header_container">
+    <a href="index.html" class="header_logo"><img src="assets/img/logo.svg" alt=""></a>
+    <nav class="header_nav">
+          <div class="header_dropdown">
+              <a href="catalog.html" class="header_link">Каталог <span class="dropdown_arrow"></span></a>
+              <div class="dropdown_menu">
+                  <a href="catalog.html?category=kitchens" class="header_link">Кухни</a>
+                  <a href="catalog.html?category=living-rooms" class="header_link">Гостиные</a>
+                  <a href="catalog.html?category=soft-furniture" class="header_link">Мягкая мебель</a>
+              </div>
+          </div>
+          <div class="header_dropdown">
+              <a href="about.html" class="header_link">О компании<span class="dropdown_arrow"></span></a>
+              <div class="dropdown_menu">
+                  <a href="cooperation.html" class="header_link">Сотрудничество</a>
+                  <a href="blog.html" class="header_link">Блог</a>
+              </div>
+          </div>
+          <a href="projects.html" class="header_link">Наши проекты</a>
+          <a href="contacts.html" class="header_link">Контакты</a>
+      </nav>
+    <div class="btns_group">
+      <a href="+73466424288" class="header_link">+7 (346) 642-42-88</a>
+      <button class="header_button">Связаться с нами</button>
+   </div>
+   <a href="" class="burger_menu"><img src="assets/img/menu.svg" alt=""></a>
+  </div>
+</header>
 
 <section class="hero">
     <video class="bg_video" autoplay muted loop playsinline>
@@ -45,7 +46,7 @@
     </video>
     <div class="container hero_section">
       <div class="hero_arrow_container">
-        <h1 class="hero_desc animate_on_scroll">
+        <h1 class="hero_desc headline2 animate_on_scroll">
             мебель под&nbsp;заказ в&nbsp;санкт-петербурге
         </h1>
         <img class="hero_arrow" src="assets/img/arrow.svg" alt="">
@@ -55,134 +56,138 @@
 
 
 <section class="categories">
-          <h2>Каталог</h2>
+          <h2 class="headline2">Каталог</h2>
   <div class="container animate_on_scroll">
     <div class="category">
       <div class="img_container">
         <img src="assets/img/kitchen.jpg" alt="Кухни">
       </div>
-      <p>Кухни</p>
+      <p class="headline5">Кухни</p>
     </div>
     
     <div class="category">
       <div class="img_container">
         <img src="assets/img/livingroom.png" alt="Гостиные">
       </div>
-      <p>Гостиные</p>
+      <p class="headline5">Гостиные</p>
     </div>
     
     <div class="category">
       <div class="img_container">
         <img src="assets/img/softFurniture.jpg" alt="Мягкая мебель">
       </div>
-      <p>Мягкая мебель</p>
+      <p class="headline5">Мягкая мебель</p>
     </div>
   </div>
 </section>
 
-  <section class="projects">
-    <div class="container">
-      <h2 class="animate_on_scroll project">Наши проекты</h2>
-      <div class="project animate_on_scroll">
-        <div class="project_info">
-          <div class="project_number">01</div>
-          <h3 class="project_title">Кухня Фреда</h3>
-          <p class="project_description">Современное пространство, созданное для человека, который ценит эстетику и порядок. "Кухня Фреда" — это минимализм в форме, но максимум в комфорте. Проект сочетает лаконичные линии, тёплую палитру и интеллектуальные решения для хранения.</p>
-          <a href="#" class="project_link">Подробнее →</a>
-        </div>
-        <div class="project_image_wrapper">
-          <p class="project_image_caption">Кухня Фреда</p>
-          <img src="assets/img/kitchenfred.png" alt="Кухня Фреда">
-        </div>
+<section class="projects">
+  <div class="container">
+    <h2 class="animate_on_scroll project headline2">Наши проекты</h2>
+    <div class="project animate_on_scroll">
+      <div class="project_info">
+        <div class="descriptor">01</div>
+        <h3 class="project_title headline3">Кухня Фреда</h3>
+        <p class="project_description text7">Современное пространство, созданное для человека, который ценит эстетику и порядок. "Кухня Фреда" — это минимализм в форме, но максимум в комфорте. Проект сочетает лаконичные линии, тёплую палитру и интеллектуальные решения для хранения.</p>
+        <a href="#" class="project_link">Подробнее →</a>
       </div>
-      <div class="project animate_on_scroll">
-        <div class="project_info">
-          <div class="project_number">02</div>
-          <h3 class="project_title">Кухня Фреда</h3>
-          <p class="project_description">Современное пространство, созданное для человека, который ценит эстетику и порядок. "Кухня Фреда" — это минимализм в форме, но максимум в комфорте. Проект сочетает лаконичные линии, тёплую палитру и интеллектуальные решения для хранения.</p>
-          <a href="#" class="project_link">Подробнее →</a>
-        </div>
-        <div class="project_image_wrapper">
-          <p class="project_image_caption">Кухня Фреда</p>
-          <img src="assets/img/kitchenfred2.png" alt="Кухня Фреда">
-        </div>
-      </div>
-      <div class="project animate_on_scroll">
-        <div class="project_info">
-          <div class="project_number">03</div>
-          <h3 class="project_title">Кухня Фреда</h3>
-          <p class="project_description">Современное пространство, созданное для человека, который ценит эстетику и порядок. "Кухня Фреда" — это минимализм в форме, но максимум в комфорте. Проект сочетает лаконичные линии, тёплую палитру и интеллектуальные решения для хранения.</p>
-          <a href="#" class="project_link">Подробнее →</a>
-        </div>
-        <div class="project_image_wrapper">
-          <p class="project_image_caption">Кухня Фреда</p>
-          <img src="assets/img/kitchen.jpg" alt="Кухня Фреда">
-        </div>
-      </div>
-      <div class="project animate_on_scroll">
-        <div class="project_info">
-          <h3 class="project_title">Портфолио</h3>
-          <p class="project_description">Современное пространство, созданное для человека, который ценит эстетику и порядок. "Кухня Фреда" — это минимализм в форме, но максимум в комфорте. Проект сочетает лаконичные линии, тёплую палитру и интеллектуальные решения для хранения.</p>
-          <a href="#" class="project_link">Подробнее →</a>
-        </div>
-        <div class="project_image_wrapper">
-          <img src="assets/img/portfolio.png" alt="Кухня Фреда">
-        </div>
+      <div class="project_image_wrapper">
+        <p class="project_image_caption descriptor">Кухня Фреда</p>
+        <img src="assets/img/kitchenfred.png" alt="Кухня Фреда">
       </div>
     </div>
-  </section>
+    <div class="project animate_on_scroll">
+      <div class="project_info">
+        <div class="descriptor">02</div>
+        <h3 class="project_title headline3">Кухня Фреда</h3>
+        <p class="project_description text7">Современное пространство, созданное для человека, который ценит эстетику и порядок. "Кухня Фреда" — это минимализм в форме, но максимум в комфорте. Проект сочетает лаконичные линии, тёплую палитру и интеллектуальные решения для хранения.</p>
+        <a href="#" class="project_link">Подробнее →</a>
+      </div>
+      <div class="project_image_wrapper">
+        <p class="project_image_caption descriptor">Кухня Фреда</p>
+        <img src="assets/img/kitchenfred2.png" alt="Кухня Фреда">
+      </div>
+    </div>
+    <div class="project animate_on_scroll">
+      <div class="project_info">
+        <div class="descriptor">03</div>
+        <h3 class="project_title headline3">Кухня Фреда</h3>
+        <p class="project_description text7">Современное пространство, созданное для человека, который ценит эстетику и порядок. "Кухня Фреда" — это минимализм в форме, но максимум в комфорте. Проект сочетает лаконичные линии, тёплую палитру и интеллектуальные решения для хранения.</p>
+        <a href="#" class="project_link">Подробнее →</a>
+      </div>
+      <div class="project_image_wrapper">
+        <p class="project_image_caption descriptor">Кухня Фреда</p>
+        <img src="assets/img/kitchen.jpg" alt="Кухня Фреда">
+      </div>
+    </div>
+    <div class="project animate_on_scroll">
+      <div class="project_info">
+        <h3 class="project_title headline3">Портфолио</h3>
+        <p class="project_description text7">Современное пространство, созданное для человека, который ценит эстетику и порядок. "Кухня Фреда" — это минимализм в форме, но максимум в комфорте. Проект сочетает лаконичные линии, тёплую палитру и интеллектуальные решения для хранения.</p>
+        <a href="#" class="project_link">Подробнее →</a>
+      </div>
+      <div class="project_image_wrapper">
+        <img src="assets/img/portfolio.png" alt="Кухня Фреда">
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section class="turnkey">
-    <div class="container">
-    <h2 class="turnkey_title animate_on_scroll">Полная комплектация под ключ</h2>
-    <div class="turnkey_content animate_on_scroll">
-        <div class="turnkey_description">
-            <p>Мы обеспечиваем все этапы создания интерьера — от дизайна до реализации. Подберем материалы, мебель и аксессуары, чтобы ваш проект был завершённым и функциональным. Также у нас предусмотрена рассрочка на все виды услуг!</p>
-            <span>
-              <p class="text_social">напишите нам</p>
-              <a href=""><img src="assets/img/instIcon.svg" alt=""></a>
-              <a href=""><img src="assets/img/telegramIcon.svg" alt=""></a>
-              <a href=""><img src="assets/img/WhatsAppIcon.svg" alt=""></a>
-            </span>
-        </div>
-        <form class="turnkey_form">
-            <div class="form_group">
-                <input type="text" id="name" placeholder="Ваше имя" required>
-            </div>
-            <div class="form_group">
-                <input type="tel" id="phone" placeholder="Ваш телефон" required>
-            </div>
-            <div class="check">
-              <input type="checkbox" required><p class="privacy_policy">Отправляя форму, я соглашаюсь с политикой конфиденциальности</p>
-            </div>
-            <button type="submit" class="form_button">Связаться с нами</button>
-        </form>
-      </div>
+<section class="turnkey">
+<div class="container">
+  <h2 class="turnkey_title headline2 animate_on_scroll">Полная комплектация под ключ</h2>
+  <div class="turnkey_content animate_on_scroll">
+    <div class="turnkey_description">
+        <p class="text7">Мы обеспечиваем все этапы создания интерьера — от дизайна до реализации. Подберем материалы, мебель и аксессуары, чтобы ваш проект был завершённым и функциональным. Также у нас предусмотрена рассрочка на все виды услуг!</p>
+        <span class="soc_group">
+          <p class="text_social">напишите нам</p>
+          <a href="" class="soc_icon"><img src="assets/img/telegramIcon.svg" alt=""></a>
+          <a href="" class="soc_icon"><img src="assets/img/WhatsAppIcon.svg" alt=""></a>
+        </span>
     </div>
-  </section>
+    <form class="turnkey_form">
+        <div class="form_group">
+            <input type="text" id="name" placeholder="Ваше имя" required>
+        </div>
+        <div class="form_group">
+            <input type="tel" id="phone" placeholder="Ваш телефон" required>
+        </div>
+        <div class="check">
+        </div>
+        <button type="submit" class="form_button">Связаться с нами</button>
+    </form>
+      <span class="soc_group">
+        <p class="text_social">напишите нам</p>
+        <a href="" class="soc_icon"><img src="assets/img/telegramIcon.svg" alt=""></a>
+        <a href="" class="soc_icon"><img src="assets/img/WhatsAppIcon.svg" alt=""></a>
+      </span>
+  </div>
+</div>
+</section>
 
   <section id="about" class="about">
     <!-- <img src="assets/img/kitchen.jpg" class="about_img_animation" alt="Интерьер кухни"> -->
     <div class="container">
-    <h2 class="about_title animate_on_scroll">О компании</h2>
+    <h2 class="about_title headline2 animate_on_scroll">О компании</h2>
       <div class="about_container">
       <div class="about_image animate_on_scroll">
             <img src="assets/img/kitchen.jpg" alt="Интерьер кухни">
+            <p class="text3 animate_on_scroll">Наша студия специализируется на создании и воплощении дизайн-проектов интерьеров, которые сочетают в себе эстетику, практичность и индивидуальный подход. Мы внимательно прислушиваемся к вашим идеям и желаниям, чтобы превратить их в продуманные до мелочей решения, отражающие ваш образ жизни, вкусы и потребности.</p>
         </div>
         <div class="about_content">
-          <p class="about_description animate_on_scroll">Наша студия специализируется на создании и воплощении дизайн-проектов интерьеров, которые сочетают в себе эстетику, практичность и индивидуальный подход. Мы внимательно прислушиваемся к вашим идеям и желаниям, чтобы превратить их в продуманные до мелочей решения, отражающие ваш образ жизни, вкусы и потребности.</p>
+          <p class="text3 animate_on_scroll">Наша студия специализируется на создании и воплощении дизайн-проектов интерьеров, которые сочетают в себе эстетику, практичность и индивидуальный подход. Мы внимательно прислушиваемся к вашим идеям и желаниям, чтобы превратить их в продуманные до мелочей решения, отражающие ваш образ жизни, вкусы и потребности.</p>
             <div class="about_stats">
               <div class="stat animate_on_scroll">
-                    <p class="stat_number">20 лет</p>
-                    <p class="stat_text">на рынке дизайна интерьеров</p>
+                    <p class="numbers">20&nbsp;лет</p>
+                    <p class="stat_text text4">на рынке дизайна интерьеров</p>
                 </div>
               <div class="stat stat_right animate_on_scroll">
-                    <p class="stat_number">>200</p>
-                    <p class="stat_text">реализованных проектов</p>
+                    <p class="numbers">>200</p>
+                    <p class="stat_text text4">реализованных проектов</p>
                 </div>
               <div class="stat animate_on_scroll">
-                    <p class="stat_number">100%</p>
-                    <p class="stat_text">довольных клиентов</p>
+                    <p class="numbers">100%</p>
+                    <p class="stat_text text4">довольных клиентов</p>
                 </div>
             </div>
           <button class="btn_transparent">Подробнее о нас</button>
@@ -190,9 +195,11 @@
       </div>
     </div>
   </section>
+
+
   <section id="blog" class="blog">
     <div class="container">
-    <h2 class="blog_title animate_on_scroll">Блог</h2>
+    <h2 class="blog_title headline2 animate_on_scroll">Блог</h2>
     <div class="blog_grid animate_on_scroll">
       <article class="blog_card">
         <div class="blog_card_bg" style="background-image: url('assets/img/blog1.png');"></div>
@@ -229,105 +236,76 @@
 
 <section id="faq" class="faq">
   <div class="container">
-    <h2 class="faq_title animate_on_scroll">Часто задаваемые вопросы</h2>
+    <h2 class="faq_title headline2 animate_on_scroll">Часто задаваемые вопросы</h2>
     <div class="faq_list">
       <div class="faq_item animate_on_scroll">
         <div class="faq_question">
-          <h3>Сколько стоит дизайн-проект интерьера?</h3>
+          <h5 class="headline5">Сколько стоит дизайн-проект интерьера?</h5>
           <div class="faq_toggle">
             <span class="faq_cross"></span>
           </div>
         </div>
         <div class="faq_answer">
-          <p>Стоимость зависит от площади помещения, стиля и уровня детализации проекта. Мы предлагаем несколько пакетов — от базового до полного сопровождения. Точный расчет вы сможете получить после бесплатной консультации.</p>
+          <p class="text8">Стоимость зависит от площади помещения, стиля и уровня детализации проекта. Мы предлагаем несколько пакетов — от базового до полного сопровождения. Точный расчет вы сможете получить после бесплатной консультации.</p>
         </div>
       </div>
       
       <div class="faq_item animate_on_scroll">
         <div class="faq_question">
-          <h3>Сколько времени занимает создание дизайн-проекта?</h3>
+          <h5 class="headline5">Сколько времени занимает создание дизайн-проекта?</h5>
           <div class="faq_toggle">
             <span class="faq_cross"></span>
           </div>
         </div>
         <div class="faq_answer">
-          <p>Стоимость зависит от площади помещения, стиля и уровня детализации проекта. Мы предлагаем несколько пакетов — от базового до полного сопровождения. Точный расчет вы сможете получить после бесплатной консультации.</p>
+          <p class="text8">Стоимость зависит от площади помещения, стиля и уровня детализации проекта. Мы предлагаем несколько пакетов — от базового до полного сопровождения. Точный расчет вы сможете получить после бесплатной консультации.</p>
         </div>
       </div>
       
       <div class="faq_item animate_on_scroll">
         <div class="faq_question">
-          <h3>Чем отличается 3D-визуализация от чертежей?</h3>
+          <h5 class="headline5">Чем отличается 3D-визуализация от чертежей?</h5>
           <div class="faq_toggle">
             <span class="faq_cross"></span>
           </div>
         </div>
         <div class="faq_answer">
-          <p>Стоимость зависит от площади помещения, стиля и уровня детализации проекта. Мы предлагаем несколько пакетов — от базового до полного сопровождения. Точный расчет вы сможете получить после бесплатной консультации.</p>
+          <p class="text8">Стоимость зависит от площади помещения, стиля и уровня детализации проекта. Мы предлагаем несколько пакетов — от базового до полного сопровождения. Точный расчет вы сможете получить после бесплатной консультации.</p>
         </div>
       </div>
       
       <div class="faq_item animate_on_scroll">
         <div class="faq_question">
-          <h3>Делаете ли вы авторский надзор за ремонтом?</h3>
+          <h5 class="headline5">Делаете ли вы авторский надзор за ремонтом?</h5>
           <div class="faq_toggle">
             <span class="faq_cross"></span>
           </div>
         </div>
         <div class="faq_answer">
-          <p>Стоимость зависит от площади помещения, стиля и уровня детализации проекта. Мы предлагаем несколько пакетов — от базового до полного сопровождения. Точный расчет вы сможете получить после бесплатной консультации.</p>
+          <p class="text8">Стоимость зависит от площади помещения, стиля и уровня детализации проекта. Мы предлагаем несколько пакетов — от базового до полного сопровождения. Точный расчет вы сможете получить после бесплатной консультации.</p>
         </div>
       </div>
       
       <div class="faq_item animate_on_scroll">
         <div class="faq_question">
-          <h3>Можно ли заказать только расстановку мебели без полного проекта?</h3>
+          <h5 class="headline5">Можно ли заказать только расстановку мебели без полного проекта?</h5>
           <div class="faq_toggle">
             <span class="faq_cross"></span>
           </div>
         </div>
         <div class="faq_answer">
-          <p>Стоимость зависит от площади помещения, стиля и уровня детализации проекта. Мы предлагаем несколько пакетов — от базового до полного сопровождения. Точный расчет вы сможете получить после бесплатной консультации.</p>
+          <p class="text8">Стоимость зависит от площади помещения, стиля и уровня детализации проекта. Мы предлагаем несколько пакетов — от базового до полного сопровождения. Точный расчет вы сможете получить после бесплатной консультации.</p>
         </div>
       </div>
     </div>
   </div>
-</section>
-
-<section class="turnkey">
-<div class="container">
-  <h2 class="turnkey_title animate_on_scroll">Полная комплектация под ключ</h2>
-  <div class="turnkey_content animate_on_scroll">
-    <div class="turnkey_description">
-        <p>Мы обеспечиваем все этапы создания интерьера — от дизайна до реализации. Подберем материалы, мебель и аксессуары, чтобы ваш проект был завершённым и функциональным. Также у нас предусмотрена рассрочка на все виды услуг!</p>
-        <span>
-          <p class="text_social">напишите нам</p>
-          <a href=""><img src="assets/img/instIcon.svg" alt=""></a>
-          <a href=""><img src="assets/img/telegramIcon.svg" alt=""></a>
-          <a href=""><img src="assets/img/WhatsAppIcon.svg" alt=""></a>
-        </span>
-    </div>
-    <form class="turnkey_form">
-        <div class="form_group">
-            <input type="text" id="name" placeholder="Ваше имя" required>
-        </div>
-        <div class="form_group">
-            <input type="tel" id="phone" placeholder="Ваш телефон" required>
-        </div>
-        <div class="check">
-          <input type="checkbox" required><p class="privacy_policy">Отправляя форму, я соглашаюсь с политикой конфиденциальности</p>
-        </div>
-        <button type="submit" class="form_button">Связаться с нами</button>
-    </form>
-  </div>
-</div>
 </section>
 
 <section class="interior_design">
   <div class="container">
-    <h2 class="interior_title animate_on_scroll">Дизайн интерьеров и мебель для вашего пространства</h2>
+    <h2 class="interior_title headline2 animate_on_scroll">Дизайн интерьеров и мебель для вашего пространства</h2>
     <div class="interior_group animate_on_scroll">
-      <p>Создание интерьера — это искусство, которое объединяет стиль, функциональность и комфорт. Наша компания предлагает комплексные услуги по разработке дизайн-проектов интерьера и широкий выбор мебели для дома и офиса, чтобы ваше пространство стало максимально удобным и гармоничным.
+      <p class="text3">Создание интерьера — это искусство, которое объединяет стиль, функциональность и комфорт. Наша компания предлагает комплексные услуги по разработке дизайн-проектов интерьера и широкий выбор мебели для дома и офиса, чтобы ваше пространство стало максимально удобным и гармоничным.
         <br><br>
       Мы работаем в разных стилях: от современного минимализма и скандинавской простоты до классики и арт-деко. Наши специалисты помогут подобрать оптимальные решения для квартир, загородных домов, офисов и коммерческих помещений.</p>
       <div class="image_content animate_on_scroll">
@@ -340,15 +318,14 @@
 
 <section class="turnkey">
 <div class="container">
-  <h2 class="turnkey_title animate_on_scroll">Полная комплектация под ключ</h2>
+  <h2 class="turnkey_title headline2 animate_on_scroll">Полная комплектация под ключ</h2>
   <div class="turnkey_content animate_on_scroll">
     <div class="turnkey_description">
-        <p>Мы обеспечиваем все этапы создания интерьера — от дизайна до реализации. Подберем материалы, мебель и аксессуары, чтобы ваш проект был завершённым и функциональным. Также у нас предусмотрена рассрочка на все виды услуг!</p>
-        <span>
+        <p class="text7">Мы обеспечиваем все этапы создания интерьера — от дизайна до реализации. Подберем материалы, мебель и аксессуары, чтобы ваш проект был завершённым и функциональным. Также у нас предусмотрена рассрочка на все виды услуг!</p>
+        <span class="soc_group">
           <p class="text_social">напишите нам</p>
-          <a href=""><img src="assets/img/instIcon.svg" alt=""></a>
-          <a href=""><img src="assets/img/telegramIcon.svg" alt=""></a>
-          <a href=""><img src="assets/img/WhatsAppIcon.svg" alt=""></a>
+          <a href="" class="soc_icon"><img src="assets/img/telegramIcon.svg" alt=""></a>
+          <a href="" class="soc_icon"><img src="assets/img/WhatsAppIcon.svg" alt=""></a>
         </span>
     </div>
     <form class="turnkey_form">
@@ -359,74 +336,55 @@
             <input type="tel" id="phone" placeholder="Ваш телефон" required>
         </div>
         <div class="check">
-          <input type="checkbox" required><p class="privacy_policy">Отправляя форму, я соглашаюсь с политикой конфиденциальности</p>
         </div>
         <button type="submit" class="form_button">Связаться с нами</button>
     </form>
+      <span class="soc_group">
+        <p class="text_social">напишите нам</p>
+        <a href="" class="soc_icon"><img src="assets/img/telegramIcon.svg" alt=""></a>
+        <a href="" class="soc_icon"><img src="assets/img/WhatsAppIcon.svg" alt=""></a>
+      </span>
   </div>
 </div>
 </section>
 
-<!-- <section id="contacts" class="contacts">
-    <div class="container">
-      <h2 class="contacts_title animate_on_scroll">Контакты</h2>
-      <div class="contacts_wrapper animate_on_scroll">
-        <div class="contact_info">
-          <div class="address_block">
-            <p><strong>ХМАО-Югра Тюменская область<br>г. Нижневартовск, ул. 60 Лет Октября 44, кв.89</strong></p>
-            <p>Тел: +7 (346) 642-42-88</p>
+<footer class="footer">
+  <div class="container footer_container">
+      <div class="footer_top">
+        <div class="logo_privacy_container">
+          <a href="index.html" class="footer_logo">
+              <img src="assets/img/logo.svg" alt="Mobiarre">
+          </a>
+          <a href="privacy.html" class="footer_privacy_link">Политика конфиденциальности</a>
           </div>
-          <div class="address_block">
-            <p><strong>г. Новосибирск, ул. Галущака дом 2а, офис 102.</strong></p>
-            <p>Тел: +7 (383) 335-85-89</p>
+          <nav class="footer_nav">
+              <a href="catalog.html" class="footer_link">Каталог</a>
+              <a href="about.html" class="footer_link">О компании</a>
+              <a href="projects.html" class="footer_link">Наши проекты</a>
+          </nav>
+          <nav class="footer_nav">
+              <a href="blog.html" class="footer_link">Блог</a>
+              <a href="#contacts" class="footer_link">Контакты</a>
+              <a href="cooperation.html" class="footer_link">Сотрудничество</a>
+          </nav>
+          <div class="footer_socials">
+              <a href="#" class="footer_link">Whatsapp</a>
+              <a href="#" class="footer_link">Telegram</a>
+              <a href="#" class="footer_link">Instagram</a>
+              <a class="footer_developer" href="https://kant.studio" target="_blank">
+              <span>Разработка сайта:</span>
+              <img src="assets/img/KantLogo.svg" alt=""></a>
           </div>
-          <div class="address_block">
-            <p><strong>г. Санкт-Петербург, ул. Набережная Матисова канала, д. 1, с.1, пом. 163н</strong></p>
-            <p>Тел: +7 (982) 416-34-56</p>
-          </div>
-          <div class="address_block">
-            <p><strong>г. Санкт-Петербург, ул. Набережная Матисова канала, д. 1, с.1, пом. 163н</strong></p>
-            <p>Тел: +7 (982) 416-34-56</p>
-          </div>
-        </div>
-        <div class="map_placeholder">
-        </div>
       </div>
-    </div>
-  </section> -->
+      <div class="footer_bottom">
+        <a href="privacy.html" class="footer_privacy_link">Политика конфиденциальности</a>
 
-  <footer class="footer">
-    <div class="container footer_container">
-        <div class="footer_top">
-          <div class="logo_privacy_container">
-            <a href="index.html" class="footer_logo">
-                <img src="assets/img/logo.svg" alt="Mobiarre">
-            </a>
-            <a href="privacy.html" class="footer_privacy_link">Политика конфиденциальности</a>
-            </div>
-            <nav class="footer_nav">
-                <a href="catalog.html" class="footer_link">Каталог</a>
-                <a href="about.html" class="footer_link">О компании</a>
-                <a href="projects.html" class="footer_link">Наши проекты</a>
-            </nav>
-            <nav class="footer_nav">
-                <a href="blog.html" class="footer_link">Блог</a>
-                <a href="#contacts" class="footer_link">Контакты</a>
-                <a href="cooperation.html" class="footer_link">Сотрудничество</a>
-            </nav>
-            <div class="footer_socials">
-                <a href="#" class="footer_link">Whatsapp</a>
-                <a href="#" class="footer_link">Telegram</a>
-                <a href="#" class="footer_link">Instagram</a>
-                <a class="footer_developer" href="https://kant.studio" target="_blank">
-                <span>Разработка сайта:</span>
-                <img src="assets/img/KantLogo.svg" alt=""></a>
-            </div>
-        </div>
-        <div class="footer_bottom">
-        </div>
-    </div>
-  </footer> 
-  <script src="assets/js/script.js" defer></script>
+        <a class="footer_developer" href="https://kant.studio" target="_blank">
+        <span>Разработка сайта:</span>
+        <img src="assets/img/KantLogo.svg" alt=""></a>
+      </div>
+  </div>
+</footer> 
+<script src="assets/js/script.js" defer></script>
 </body>
 </html>
