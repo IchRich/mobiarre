@@ -49,7 +49,7 @@
       <div class="contacts_wrapper animate_on_scroll">
         <div class="contact_info">
           <div class="address_block">
-            <p><strong>ХМАО-Югра Тюменская область<br>г. Нижневартовск, ул. 60 Лет Октября 44, кв.89</strong></p>
+            <p class=""><strong>ХМАО-Югра Тюменская область<br>г. Нижневартовск, ул. 60 Лет Октября 44, кв.89</strong></p>
             <a href="tel:+73466424288" class="contact_nubmer">Тел: +7 (346) 642-42-88</a>
           </div>
           <div class="address_block">
@@ -78,32 +78,55 @@
   </section>
 
 <section class="turnkey">
-  <div class="container">
-    <h2 class="turnkey_title animate_on_scroll">Полная комплектация под ключ</h2>
-    <div class="turnkey_content animate_on_scroll">
-      <div class="turnkey_description">
-          <p>Мы обеспечиваем все этапы создания интерьера — от дизайна до реализации. Подберем материалы, мебель и аксессуары, чтобы ваш проект был завершённым и функциональным. Также у нас предусмотрена рассрочка на все виды услуг!</p>
-          <span>
-            <p class="text_social">напишите нам</p>
-            <a href=""><img src="assets/img/instIcon.svg" alt=""></a>
-            <a href=""><img src="assets/img/telegramIcon.svg" alt=""></a>
-            <a href=""><img src="assets/img/WhatsAppIcon.svg" alt=""></a>
-          </span>
-      </div>
-      <form class="turnkey_form">
-          <div class="form_group">
-              <input type="text" id="name" placeholder="Ваше имя" required>
-          </div>
-          <div class="form_group">
-              <input type="tel" id="phone" placeholder="Ваш телефон" required>
-          </div>
-          <div class="check">
-            <input type="checkbox" required><p class="privacy_policy">Отправляя форму, я соглашаюсь с политикой конфиденциальности</p>
-          </div>
-          <button type="submit" class="form_button">Связаться с нами</button>
-      </form>
+<div class="container">
+  <div class="turnkey_content animate_on_scroll">
+    <div class="turnkey_description">
+        <p class="text2">Свяжитесь с нами, чтобы обсудить ваш проект — мы подготовим индивидуальное предложение и ответим на все вопросы.</p>
+        <span class="soc_group">
+          <p class="text_social">напишите нам</p>
+          <a href="" class="soc_icon"><img src="assets/img/telegramIcon.svg" alt=""></a>
+          <a href="" class="soc_icon"><img src="assets/img/WhatsAppIcon.svg" alt=""></a>
+        </span>
     </div>
+    <form class="turnkey_form">
+        <div class="form_row">
+            <div class="form_group">
+                <input type="text" id="name" placeholder="Ваше имя" required>
+            </div>
+            <div class="form_group">
+                <input type="text" id="surname" placeholder="Ваша фамилия" required>
+            </div>
+        </div>
+        <div class="form_row">
+            <div class="form_group">
+                <input type="tel" id="phone" placeholder="Ваш телефон" required>
+            </div>
+            <div class="form_group">
+                <select id="budget" required>
+                    <option value="">Бюджет</option>
+                    <option value="до-500000">До 500 000 ₽</option>
+                    <option value="500000-1000000">500 000 - 1 000 000 ₽</option>
+                    <option value="1000000-2000000">1 000 000 - 2 000 000 ₽</option>
+                    <option value="свыше-2000000">Свыше 2 000 000 ₽</option>
+                </select>
+            </div>
+        </div>
+        <div class="form_row">
+            <div class="form_group form_group_full">
+                <textarea id="message" placeholder="Ваше сообщение" rows="4" required></textarea>
+            </div>
+        </div>
+
+      <button type="submit" class="form_button">Связаться с нами</button>
+      <span class="soc_group">
+        <p class="text_social">напишите нам</p>
+        <a href="" class="soc_icon"><img src="assets/img/telegramIcon.svg" alt=""></a>
+        <a href="" class="soc_icon"><img src="assets/img/WhatsAppIcon.svg" alt=""></a>
+      </span>
+        
+    </form>
   </div>
+</div>
 </section>
 
   <footer class="footer">
