@@ -2956,6 +2956,7 @@ img.about_img_animation.element_show {
   .about_stats
   {
     grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
   }
   .stat_right
   {
@@ -2991,5 +2992,32 @@ img.about_img_animation.element_show {
   .interior_group p, .interior_group *
   {
     width: 100%;
+  }
+  
+  /* Мобильный футер */
+  .footer_top
+  {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    height: auto;
+  }
+  .logo_privacy_container
+  {
+    width: 100%;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .footer_nav, .footer_socials
+  {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start;
+  }
+  .footer_nav
+  {
+    margin-bottom: 10px;
   }
 }
