@@ -1011,6 +1011,14 @@ h2
   gap: 10px;
   align-items: center;
 }
+.turnkey_content .soc_group
+{
+  display: none;
+}
+.turnkey_description .soc_group
+{
+  display: flex;
+}
 .soc_group a
 {
   text-transform: uppercase;
@@ -1138,13 +1146,8 @@ a.footer_developer  {
   line-height: 1.1;
 }
 .category_main_title {
-  font-family: 'Exo 2';
-  font-size: 70px;
-  font-weight: 600;
   color: #000000;
   margin-bottom: 60px;
-  line-height: 1;
-  text-transform: uppercase;
 }
 
 .category_subtitle {
@@ -1157,24 +1160,31 @@ a.footer_developer  {
 }
 
 .city_selector {
-  font-family: 'Jost';
-  font-size: 20px;
   color: #000000;
   margin-bottom: 105px;
   display: flex;
   align-items: center;
   gap: 8px;
-  font-weight: 400;
-  line-height: 1.2;
 }
-
+.mobile_bread .city_selector
+{
+  display: none;
+  margin-bottom: 0;
+}
+.mobile_bread.breadcrumbs
+{
+  display: none;
+}
 .city_dropdown {
   position: relative;
   display: inline-block;
   cursor: pointer;
   font-weight: 400;
 }
-
+.city_selector .city_dropdown
+{
+  color: #000;
+}
 .city_dropdown::after {
   content: '▼';
   font-size: 12px;
@@ -1266,11 +1276,7 @@ a.footer_developer  {
 
 .category_title {
   font-family: 'Jost';
-  font-size: 30px;
-  font-weight: 600;
   color: #000000;
-  text-transform: uppercase;
-  line-height: 1.2;
 }
 
 .category_image {
@@ -1699,10 +1705,6 @@ a.footer_developer  {
   margin-bottom: 40px;
 }
 .projects_title {
-  font-family: 'Exo 2';
-  font-size: 70px;
-  font-weight: 600;
-  text-transform: uppercase;
   margin: 0;
 }
 .projects_count {
@@ -1729,16 +1731,11 @@ a.footer_developer  {
   width: 100%;
 }
 .project_caption .project_name {
-   font-family:'Exo 2';
-   font-size:22px;
-   font-weight:600;
    color:#000;
   }
 .project_caption .project_location {
   font-family:'Exo 2';
-  font-size:20px;
   color:#808080;
-  font-weight: 500;
 }
 
 /* размеры */
@@ -1810,8 +1807,6 @@ a.footer_developer  {
 }
 .project_name {
   font-family: 'Jost';
-  font-size: 16px;
-  font-weight: 600;
   color: #000000;
 }
 .project_location {
@@ -2615,7 +2610,7 @@ img.about_img_animation.element_show {
   }
   .headline4
   {
-    font-size: 30px;
+    font-size: 20px;
   }
   .headline5
   {
@@ -2647,6 +2642,10 @@ img.about_img_animation.element_show {
     font-size: 16px;
   }
   .text8
+  {
+    font-size: 18px;
+  }
+  .caption2
   {
     font-size: 18px;
   }
@@ -2854,6 +2853,101 @@ img.about_img_animation.element_show {
   {
     display: flex;
   }
+  .footer
+  {
+    margin: 80px 0 20px 0;
+  }
+
+  /* Страница catalog */
+  .category_page_container
+  {
+    flex-direction: column;
+  }
+  .category_main_content
+  {
+    position: unset;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    max-width: none;
+  }
+  .category_card
+  {
+    height: 330px;
+    padding: 20px;
+  }
+  .category_image
+  {
+    width: 290px;
+    height: 290px;
+  }
+  .category_arrow
+  {
+    height: 45px;
+    width: 45px;
+  }
+  .category_group
+  {
+    max-width: 360px;
+  }
+  .category_group .city_selector
+  {
+    display: none;
+  }
+  .category_main_content .breadcrumbs
+  {
+    display: none;
+  }
+  .mobile_bread.breadcrumbs
+  {
+    display: flex;
+  }
+  .mobile_bread .city_selector
+  {
+    display: flex;
+    margin-left: auto;
+    width: 360px;
+  }
+  .categories_list
+  {
+    margin-top: 50px;
+  }
+  .category_page_container
+  {
+    display: flex;
+    gap: 0px;
+  }
+
+  /* страница наших проектов */
+  .projects_header
+  {
+    margin-bottom: 20px;
+  }
+  .project_card
+  {
+    height: 42vh;
+  }
+  .projects_grid
+  {
+    column-gap: 10px;
+    row-gap: 20px;
+  }
+  .projects_grid .project_card:nth-child(odd)
+  {
+    grid-column: 1 / 7;
+    height: 42vh;
+  }
+  .projects_grid .project_card:nth-child(even)
+  {
+    grid-column: 7 / 13;
+    height: 42vh;
+  }
+  .project_caption
+  {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
 }
 @media (max-width: 450px)
 {
@@ -2876,6 +2970,10 @@ img.about_img_animation.element_show {
   .headline2
   {
     font-size: 30px;
+  }
+  .caption2
+  {
+    font-size: 14px;
   }
   .hero_arrow_container 
   {
@@ -2997,27 +3095,110 @@ img.about_img_animation.element_show {
   /* Мобильный футер */
   .footer_top
   {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-bottom: 0;
   }
   .logo_privacy_container
   {
-    width: 100%;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  .footer_nav, .footer_socials
-  {
-    width: 100%;
+    grid-column: span 3 / span 3;
     flex-direction: row;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: flex-start;
+    align-items: center;
   }
-  .footer_nav
+  .footer_logo img
   {
-    margin-bottom: 10px;
+    width: 90px;
+  }
+  .footer_link
+  {
+    font-size: 12px;
+  }
+  .footer_privacy_link
+  {
+    font-size: 9px;
+  }
+  a.footer_developer
+  {
+    font-size: 9px;
+  }
+  a.footer_developer  img
+  {
+    width: 73px;
+  }
+  .footer
+  {
+    margin: 60px 0 20px 0;
+  }
+  .footer_container
+  {
+    padding-top: 20px;
+    border-top: 1px solid black;
+  }
+
+  /* Страница catalog */
+  .category_main_content
+  {
+    flex-direction: column;
+  }
+  .category_main_title
+  {
+    margin-bottom: 20px;
+  }
+  .category_card
+  {
+    align-items: flex-end;
+  }
+  .mobile_bread .city_selector
+  {
+    width: auto;
+  }
+  .mobile_bread.breadcrumbs
+  {
+    flex-direction: row;
+  }
+  .category_image
+  {
+    width: 20vh;
+    height: 20vh;
+  }
+  .category_group
+  {
+    max-width: none;
+  }
+
+  /* страница наших проектов */
+  .projects_header
+  {
+    margin-bottom: 20px;
+  }
+  .project_card
+  {
+    height: 42vh;
+  }
+  .projects_grid
+  {
+    column-gap: 10px;
+    row-gap: 20px;
+  }
+  .projects_grid .project_card:nth-child(odd),
+  .projects_grid .project_card:nth-child(even)
+  {
+    grid-column: 1 / 13;
+    height: 41vh;
+  }
+  .projects_count
+  {
+    font-size: 16px;
+  }
+  .projects_header
+  {
+    gap: 10px;
+  }
+  .breadcrumbs
+  {
+    margin-bottom: 20px;
   }
 }
