@@ -17,9 +17,9 @@
           <div class="header_dropdown">
               <a href="catalog.html" class="header_link">Каталог <span class="dropdown_arrow"></span></a>
               <div class="dropdown_menu">
-                  <a href="catalog.html?category=kitchens" class="header_link">Кухни</a>
-                  <a href="catalog.html?category=living-rooms" class="header_link">Гостиные</a>
-                  <a href="catalog.html?category=soft-furniture" class="header_link">Мягкая мебель</a>
+                  <a href="kitchens.html" class="header_link">Кухни</a>
+                  <a href="living-rooms.html" class="header_link">Гостиные</a>
+                  <a href="soft-furniture.html" class="header_link">Мягкая мебель</a>
               </div>
           </div>
           <div class="header_dropdown">
@@ -36,9 +36,51 @@
       <a href="+73466424288" class="header_link">+7 (346) 642-42-88</a>
       <button class="header_button">Связаться с нами</button>
    </div>
-   <a href="" class="burger_menu"><img src="assets/img/menu.svg" alt=""></a>
+   <button class="burger_menu" id="burgerMenu">
+     <div class="burger_icon">
+       <span class="burger_line"></span>
+       <span class="burger_line"></span>
+       <span class="burger_line"></span>
+     </div>
+   </button>
   </div>
 </header>
+
+<!-- Мобильное меню -->
+<div class="mobile_menu_overlay" id="mobileMenuOverlay">
+  <div class="mobile_menu">
+    <div class="mobile_menu_header">
+      <a href="index.html" class="mobile_menu_logo"><img src="assets/img/logo.svg" alt=""></a>
+    </div>
+    
+    <nav class="mobile_menu_nav">
+      <div class="mobile_menu_dropdown">
+        <a href="catalog.html" class="mobile_menu_link">Каталог <span class="mobile_dropdown_arrow">▼</span></a>
+        <div class="mobile_dropdown_menu">
+          <a href="kitchens.html" class="mobile_menu_link">Кухни</a>
+          <a href="living-rooms.html" class="mobile_menu_link">Гостиные</a>
+          <a href="soft-furniture.html" class="mobile_menu_link">Мягкая мебель</a>
+        </div>
+      </div>
+      
+      <div class="mobile_menu_dropdown">
+        <a href="about.html" class="mobile_menu_link">О компании <span class="mobile_dropdown_arrow">▼</span></a>
+        <div class="mobile_dropdown_menu">
+          <a href="cooperation.html" class="mobile_menu_link">Сотрудничество</a>
+          <a href="blog.html" class="mobile_menu_link">Блог</a>
+        </div>
+      </div>
+      
+      <a href="projects.html" class="mobile_menu_link">Наши проекты</a>
+      <a href="contacts.html" class="mobile_menu_link">Контакты</a>
+    </nav>
+    
+    <div class="mobile_menu_contact">
+      <a href="tel:+73466424288" class="mobile_menu_phone">+7 (346) 642-42-88</a>
+      <button class="mobile_menu_button">Связаться с нами</button>
+    </div>
+  </div>
+</div>
 
 <section class="about_hero" aria-label="Дизайн, который вдохновляет">
     <video class="bg_video" autoplay muted loop playsinline>

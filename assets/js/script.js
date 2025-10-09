@@ -585,3 +585,66 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 // === Конец FAQ Accordion Functionality ===
+
+// === Мобильное меню ===
+document.addEventListener('DOMContentLoaded', () => {
+  const burgerMenu = document.getElementById('burgerMenu');
+  const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+  const mobileDropdowns = document.querySelectorAll('.mobile_menu_dropdown');
+  const header = document.querySelector('.header');
+
+  // Функция для переключения мобильного меню
+  function toggleMobileMenu() {
+    const isActive = mobileMenuOverlay.classList.contains('active');
+    
+    if (isActive) {
+      // Закрытие меню
+      mobileMenuOverlay.classList.remove('active');
+      burgerMenu.classList.remove('active');
+      if (header) header.classList.remove('mobile_menu_open');
+      document.body.style.overflow = '';
+    } else {
+      // Открытие меню
+      mobileMenuOverlay.classList.add('active');
+      burgerMenu.classList.add('active');
+      if (header) header.classList.add('mobile_menu_open');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  // Открытие/закрытие мобильного меню через бургер
+  if (burgerMenu && mobileMenuOverlay) {
+    burgerMenu.addEventListener('click', (e) => {
+      e.preventDefault();
+      toggleMobileMenu();
+    });
+  }
+
+  // Закрытие при клике на фон
+  if (mobileMenuOverlay) {
+    mobileMenuOverlay.addEventListener('click', (e) => {
+      if (e.target === mobileMenuOverlay) {
+        toggleMobileMenu();
+      }
+    });
+  }
+
+  // Раскрывающиеся меню в мобильной версии
+  mobileDropdowns.forEach(dropdown => {
+    const link = dropdown.querySelector('.mobile_menu_link');
+    if (link) {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        dropdown.classList.toggle('active');
+      });
+    }
+  });
+
+  // Закрытие при нажатии Escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mobileMenuOverlay.classList.contains('active')) {
+      toggleMobileMenu();
+    }
+  });
+});
+// === Конец мобильного меню ===

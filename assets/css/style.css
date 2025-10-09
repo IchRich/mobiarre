@@ -97,7 +97,7 @@ header
 
 .header {
   position: fixed;
-  z-index: 10;
+  z-index: 9999;
   display: flex;
   width: 100%;
   top: 0;
@@ -119,6 +119,95 @@ header
 .burger_menu
 {
   display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  z-index: 10000; /* Выше мобильного меню */
+}
+
+.burger_icon {
+  display: flex;
+  flex-direction: column;
+  width: 24px;
+  height: 18px;
+  position: relative;
+}
+
+.burger_line {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+.burger_line:nth-child(1) {
+  margin-bottom: 6px;
+}
+
+.burger_line:nth-child(2) {
+  margin-bottom: 6px;
+}
+
+/* Анимация превращения в крестик */
+.burger_menu.active .burger_line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.burger_menu.active .burger_line:nth-child(2) {
+  opacity: 0;
+}
+
+.burger_menu.active .burger_line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Для белого хедера */
+.header.header_variant2 .burger_line {
+  background-color: #fff;
+}
+
+/* Стили хедера при открытом мобильном меню */
+.header.mobile_menu_open {
+  background: transparent !important;
+  backdrop-filter: none !important;
+}
+
+.header.mobile_menu_open .header_container {
+  border-bottom: 1px solid #ffffff !important;
+  filter: invert(1);
+}
+
+.header.mobile_menu_open .header_link {
+  color: #000000 !important;
+}
+
+.header.mobile_menu_open .header_link:hover {
+  color: #81503A !important;
+}
+
+.header.mobile_menu_open .header_button {
+  background-color: #81503A !important;
+  color: #FFFFFF !important;
+}
+
+.header.mobile_menu_open .header_button:hover {
+  background-color: #52362c !important;
+}
+
+/* Убираем фильтры для белого хедера при открытом меню */
+.header.header_variant2.mobile_menu_open .header_container {
+  border-bottom: 1px solid #ffffff !important;
+}
+
+.header.header_variant2.mobile_menu_open .header_link {
+  color: #000000 !important;
+}
+
+.header.header_variant2.mobile_menu_open .header_button {
+  background-color: #81503A !important;
+  color: #FFFFFF !important;
 }
 .btn_transparent
 {
@@ -201,14 +290,7 @@ button
 .header.header_variant2 .header_button:hover {
   background-color: #f0f0f0;
 }
-.header.header_variant2 .burger_menu
-{
-  filter: invert(0);
-}
-.burger_menu
-{
-  filter: invert(1);
-}
+/* Удалены старые стили для бургера */
 /* Исходное состояние */
 .animate_on_scroll {
     opacity: 0;
@@ -2540,6 +2622,233 @@ img.about_img_animation.element_show {
 }
 
 /* === Конец графических элементов для category_page === */
+
+/* === Мобильное меню === */
+.mobile_menu_overlay {
+  position: fixed;
+  top: 0; /* Начинается с самого верха */
+  left: 0;
+  width: 100vw;
+  height: 100vh; /* Полная высота экрана */
+  background-color: rgba(222, 193, 163, 1);
+  z-index: 9990;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(-100%); /* Начальная позиция выше экрана */
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.mobile_menu_overlay.active {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0); /* Анимация появления сверху */
+}
+
+.mobile_menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 20px 20px 20px;
+  position: relative;
+}
+
+/* Анимация появления элементов меню */
+.mobile_menu_nav,
+.mobile_menu_contact {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease 0.2s, transform 0.6s ease 0.2s;
+}
+
+.mobile_menu_overlay.active .mobile_menu_nav,
+.mobile_menu_overlay.active .mobile_menu_contact {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mobile_menu_logo {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease 0.1s, transform 0.4s ease 0.1s;
+}
+
+.mobile_menu_overlay.active .mobile_menu_logo {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mobile_menu_header {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.mobile_menu_logo img {
+  width: 120px;
+}
+
+.mobile_menu_close {
+  display: none; /* Скрываем кнопку закрытия */
+}
+
+.mobile_menu_nav {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: auto;
+}
+
+.mobile_menu_dropdown {
+  position: relative;
+  text-align: center;
+}
+
+.mobile_menu_link {
+  font-family: 'Jost';
+  font-size: 24px;
+  font-weight: 400;
+  color: #000;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+  padding: 10px 0;
+}
+
+.mobile_menu_link:hover {
+  color: #81503A;
+}
+
+.mobile_dropdown_arrow {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 6px;
+  background-color: #000;
+  -webkit-mask: url(../img/checkMark.svg) no-repeat center / contain;
+          mask: url(../img/checkMark.svg) no-repeat center / contain;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  vertical-align: middle;
+  background-image: url(../img/checkMark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mobile_menu_dropdown.active .mobile_dropdown_arrow {
+  transform: rotate(180deg);
+}
+
+.mobile_dropdown_menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  margin-top: 15px;
+}
+
+.mobile_menu_dropdown.active .mobile_dropdown_menu {
+  max-height: 200px;
+}
+
+.mobile_dropdown_menu .mobile_menu_link {
+  font-size: 20px;
+  padding: 8px 0;
+  justify-content: center;
+}
+
+.mobile_menu_contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-top: auto;
+  width: 100%;
+}
+
+.mobile_menu_phone {
+  font-family: 'Jost';
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+}
+
+.mobile_menu_button {
+  width: 100%;
+  padding: 15px 30px;
+  background-color: #81503A;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 100px;
+  font-family: 'Jost';
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mobile_menu_button:hover {
+  background-color: #52362c;
+}
+
+/* Адаптивность мобильного меню */
+@media (max-width: 768px) {
+  .mobile_menu_nav {
+    gap: 25px;
+  }
+  
+  .mobile_menu_link {
+    font-size: 20px;
+  }
+  
+  .mobile_dropdown_menu .mobile_menu_link {
+    font-size: 18px;
+  }
+  
+  .mobile_menu_phone {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 450px) {
+  .mobile_menu_nav {
+    gap: 20px;
+  }
+  
+  .mobile_menu_link {
+    font-size: 18px;
+  }
+  
+  .mobile_dropdown_menu .mobile_menu_link {
+    font-size: 16px;
+  }
+  
+  .mobile_menu_phone {
+    font-size: 16px;
+  }
+  
+  .mobile_menu_header {
+    top: 20px;
+    left: 15px;
+    right: 15px;
+  }
+  
+  .mobile_menu_logo img {
+    width: 100px;
+  }
+}
+
 .mobile_btn
 {
   display: none;
