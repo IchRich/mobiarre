@@ -427,6 +427,7 @@ button
   transition: width 0.8s ease, height 0.8s ease;
   height: 70vh;
   width: 560px;
+  cursor: pointer;
 }
 .category:hover
 {
@@ -3051,6 +3052,20 @@ img.about_img_animation.element_show {
   {
     text-align: left;
   }
+  .related_list
+  {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+    grid-template-columns: unset;
+    padding-bottom: 20px;
+  }
+  .related_card
+  {
+    flex: 0 0 calc(50% - 30px);
+    scroll-snap-align: start;
+  }
 
   /* страница о компании */
   .about_intro_text
@@ -3667,6 +3682,21 @@ img.about_img_animation.element_show {
   {
     width: 100%;
   }
+
+  /* страницы продукта */
+  .related_list {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Enables scroll snapping */
+    gap: 10px;
+    grid-template-columns: unset; /* Resets the grid layout */
+  }
+
+  .related_card {
+    flex: 0 0 calc(100% - 30px);
+    scroll-snap-align: start; /* Snaps cards into place when scrolling */
+  }
+
 
   /* страница контактов */
   .address_block, .contact_images
