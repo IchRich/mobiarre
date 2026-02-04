@@ -3,50 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Гостиные - Mobiarre</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Каталог</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/favicon.ico">
 </head>
 <body>
-<header class="header">
-  <div class="container header_container">
-    <a href="index.html" class="header_logo"><img src="assets/img/logo.svg" alt=""></a>
-    <nav class="header_nav">
-          <div class="header_dropdown">
-              <a href="catalog.html" class="header_link">Каталог <span class="dropdown_arrow"></span></a>
-              <div class="dropdown_menu">
-                  <a href="kitchens.html" class="header_link">Кухни</a>
-                  <a href="living-rooms.html" class="header_link">Гостиные</a>
-                  <a href="soft-furniture.html" class="header_link">Мягкая мебель</a>
-              </div>
-          </div>
-          <div class="header_dropdown">
-              <a href="about.html" class="header_link">О компании<span class="dropdown_arrow"></span></a>
-              <div class="dropdown_menu">
-                  <a href="cooperation.html" class="header_link">Сотрудничество</a>
-                  <a href="blog.html" class="header_link">Блог</a>
-              </div>
-          </div>
-          <a href="projects.html" class="header_link">Наши проекты</a>
-          <a href="contacts.html" class="header_link">Контакты</a>
-      </nav>
-    <div class="btns_group">
-      <a href="+73466424288" class="header_link">+7 (346) 642-42-88</a>
-      <button class="header_button">Связаться с нами</button>
-   </div>
-   <button class="burger_menu" id="burgerMenu">
-     <div class="burger_icon">
-       <span class="burger_line"></span>
-       <span class="burger_line"></span>
-       <span class="burger_line"></span>
-     </div>
-   </button>
-  </div>
-</header>
-
-<!-- Мобильное меню -->
 <div class="mobile_menu_overlay" id="mobileMenuOverlay">
   <div class="mobile_menu">
     <div class="mobile_menu_header">
@@ -54,22 +15,16 @@
     </div>
     
     <nav class="mobile_menu_nav">
-      <div class="mobile_menu_dropdown">
-        <a href="catalog.html" class="mobile_menu_link">Каталог <span class="mobile_dropdown_arrow">▼</span></a>
-        <div class="mobile_dropdown_menu">
-          <a href="kitchens.html" class="mobile_menu_link">Кухни</a>
-          <a href="living-rooms.html" class="mobile_menu_link">Гостиные</a>
-          <a href="soft-furniture.html" class="mobile_menu_link">Мягкая мебель</a>
-        </div>
-      </div>
+        <a href="catalog.html" class="mobile_menu_link">Каталог</a>
+        <a href="catalog.html" class="mobile_menu_link">Кухни</a>
+        <a href="catalog.html" class="mobile_menu_link">Гостиные</a>
+        <a href="catalog.html" class="mobile_menu_link">Гардеробные</a>
+        <a href="catalog.html" class="mobile_menu_link">Мягкая мебель</a>
+        <a href="catalog.html" class="mobile_menu_link">Кровати</a>
       
-      <div class="mobile_menu_dropdown">
-        <a href="about.html" class="mobile_menu_link">О компании <span class="mobile_dropdown_arrow">▼</span></a>
-        <div class="mobile_dropdown_menu">
-          <a href="cooperation.html" class="mobile_menu_link">Сотрудничество</a>
-          <a href="blog.html" class="mobile_menu_link">Блог</a>
-        </div>
-      </div>
+        <a href="about.html" class="mobile_menu_link">О компании</a>
+        <a href="cooperation.html" class="mobile_menu_link">Сотрудничество</a>
+        <a href="blog.html">Блог</a>
       
       <a href="projects.html" class="mobile_menu_link">Наши проекты</a>
       <a href="contacts.html" class="mobile_menu_link">Контакты</a>
@@ -82,134 +37,174 @@
   </div>
 </div>
 
-<section class="category_page">
-    <div class="breadcrumbs container mobile_bread">
-        <a href="index.html">Главная</a> <span class="crumb_sep"></span> <span>Гостиные</span>
-        <div class="text7 city_selector ">
-            Город: 
-            <span class="city_dropdown">Санкт-Петербург</span>
+<header class="header">
+  <div class="container header_container">
+    <a href="index.html" class="header_logo"><img src="assets/img/logo.svg" alt=""></a>
+      <nav class="header_nav">
+        <div class="header_dropdown">
+            <p class="header_link">Каталог <span class="dropdown_arrow"></span></p>
+          <div class="dropdown_menu">
+            <a href="catalog.html" class="header_link">Кухни</a>
+            <a href="catalog.html" class="header_link">Гостиные</a>
+            <a href="catalog.html" class="header_link">Гардеробные</a>
+            <a href="catalog.html" class="header_link">Мягкая мебель</a>
+            <a href="catalog.html" class="header_link">Кровати</a>
+          </div>
         </div>
-    </div>
-    <div class="container category_page_container">
 
-        <div class="category_main_content">
-        <div class="breadcrumbs">
-            <a href="index.html">Главная</a> <span class="crumb_sep"></span> <span>Гостиные</span>
+        <div class="header_dropdown">
+          <a href="about.html" class="header_link">О компании<span class="dropdown_arrow"></span></a>
+          <div class="dropdown_menu">
+            <a href="cooperation.html" class="header_link">Сотрудничество</a>
+            <a href="blog.html" class="header_link">Блог</a>
+          </div>
         </div>
-            <h1 class="category_main_title headline2">ГОСТИНЫЕ</h1>
-            <div class="category_group">
-            <p class="text category_subtitle">УЗНАЙТЕ БОЛЬШЕ О ПРОДУКТАХ MOBIARRE</p>
-            
+
+        <a href="projects.html" class="header_link">Наши проекты</a>
+        <a href="contacts.html" class="header_link">Контакты</a>
+      </nav>
+    <div class="btns_group">
             <div class="text7 city_selector">
-                Выберите город: 
-                <span class="city_dropdown">Санкт-Петербург</span>
+              <label for="city_select">Выберите город:</label>
+              <select id="city_select" class="filter_select city_dropdown">
+                <option value="spb" selected="">Санкт-Петербург</option>
+                <option value="moscow">Москва</option>
+                <option value="kazan">Казань</option>
+                <option value="novosibirsk">Новосибирск</option>
+                <option value="nijnevartovsk">Нижневартовск</option>
+              </select>
             </div>
-            
-            <button class="catalog_button">Перейти в каталог</button>
-            </div>
+   </div>
+   <button class="burger_menu" id="burgerMenu">
+     <div class="burger_icon">
+       <span class="burger_line"></span>
+       <span class="burger_line"></span>
+       <span class="burger_line"></span>
+     </div>
+   </button>
+  </div>
+</header>
+
+<section class="modern_page">
+    <div class="container">
+        <!-- Хлебные крошки -->
+        <div class="breadcrumbs">
+            <a href="index.html">Главная</a>
+            <span class="crumb_sep"></span>
+            <a href="catalog.html">Каталог</a>
         </div>
-        
-        <div class="categories_list">
-            <div class="category_card" onclick="window.location.href='modern.html';">
-                <div class="category_info">
-                    <div class="headline4 category_title">Современный стиль</div>
-                    <div class="category_arrow">></div>
+
+        <!-- Заголовок -->
+        <div class="projects_header animate_on_scroll">
+            <h1 class="projects_title headline2">Каталог мебели</h1>
+        </div>
+
+        <!-- Фильтры -->
+        <div class="filters_section">
+            <form id="product_filters" method="GET">
+                <div class="filter_group">
+                    <!-- Категории -->
+                    <select name="product_category" class="filter_select">
+                        <option value="">Все категории</option>
+                        <option value="kitchens">Кухни</option>
+                        <option value="living-rooms">Гостиные</option>
+                        <option value="dressing-rooms">Гардеробные</option>
+                        <option value="soft-furniture">Мягкая мебель</option>
+                        <option value="beds">Кровати</option>
+                    </select>
+
+                    <!-- Стили -->
+                    <select name="style" class="filter_select">
+                        <option value="">Все стили</option>
+                        <option value="modern">Современный</option>
+                        <option value="classic">Классический</option>
+                        <option value="scandinavian">Скандинавский</option>
+                    </select>
+
+                    <!-- Бренды -->
+                    <select name="brand" class="filter_select">
+                        <option value="">Все бренды</option>
+                        <option value="brand1">Бренд 1</option>
+                        <option value="brand2">Бренд 2</option>
+                    </select>
                 </div>
-                <div class="category_image">
-                    <img src="assets/img/category1.png" alt="Современный стиль">
+
+                <div class="filter_group">
+                    <!-- Материалы -->
+                    <select name="material" class="filter_select">
+                        <option value="">Все материалы</option>
+                        <option value="wood">Дерево</option>
+                        <option value="metal">Металл</option>
+                        <option value="glass">Стекло</option>
+                    </select>
                 </div>
+            </form>
+        </div>
+
+        <!-- Сетка товаров -->
+        <div class="products_grid" id="products_grid">
+            <!-- Пример товаров -->
+            <div class="product_card product_large left" onclick="window.location.href='product.html';">
+                <div class="product_image">
+                    <img src="assets/img/kitchen.jpg" alt="Товар 1" style="width:100%;height:100%;object-fit:cover;">
+                </div>
+                <div class="product_title headline5"><p>Товар 1</p></div>
             </div>
-            
-            <div class="category_card">
-                <div class="category_info">
-                    <div class="headline4 category_title">Классический стиль</div>
-                    <div class="category_arrow">></div>
+            <div class="product_card product_small right" onclick="window.location.href='product.html';">
+                <div class="product_image">
+                    <img src="assets/img/livingroom.png" alt="Товар 2" style="width:100%;height:100%;object-fit:cover;">
                 </div>
-                <div class="category_image">
-                    <img src="assets/img/category1.png" alt="Современный стиль">
-                </div>
-            </div>
-            
-            <div class="category_card">
-                <div class="category_info">
-                    <div class="headline4 category_title">Стеллажи с задней стенкой</div>
-                    <div class="category_arrow">></div>
-                </div>
-                <div class="category_image">
-                    <img src="assets/img/category1.png" alt="Современный стиль">
-                </div>
-            </div>
-            
-            <div class="category_card">
-                <div class="category_info">
-                    <div class="headline4 category_title">Boiserie</div>
-                    <div class="category_arrow">></div>
-                </div>
-                <div class="category_image">
-                    <img src="assets/img/category1.png" alt="Современный стиль">
-                </div>
-            </div>
-            
-            <div class="category_card">
-                <div class="category_info">
-                    <div class="headline4 category_title">Напольные шкафы в гостиную</div>
-                    <div class="category_arrow">></div>
-                </div>
-                <div class="category_image">
-                    <img src="assets/img/category1.png" alt="Современный стиль">
-                </div>
-            </div>
-            
-            <div class="category_card">
-                <div class="category_info">
-                    <div class="headline4 category_title">Перегородки</div>
-                    <div class="category_arrow">></div>
-                </div>
-                <div class="category_image">
-                    <img src="assets/img/category1.png" alt="Современный стиль">
-                </div>
+                <div class="product_title headline5"><p>Товар 2</p></div>
             </div>
         </div>
     </div>
 </section>
 
-
 <footer class="footer">
-  <div class="container footer_container">
-      <div class="footer_top">
-        <div class="logo_privacy_container">
-          <a href="index.html" class="footer_logo">
-              <img src="assets/img/logo.svg" alt="Mobiarre">
-          </a>
-          <a href="privacy.html" class="footer_privacy_link">Политика конфиденциальности</a>
-          </div>
-          <nav class="footer_nav">
-              <a href="catalog.html" class="footer_link">Каталог</a>
-              <a href="about.html" class="footer_link">О компании</a>
-              <a href="projects.html" class="footer_link">Наши проекты</a>
-          </nav>
-          <nav class="footer_nav">
-              <a href="blog.html" class="footer_link">Блог</a>
-              <a href="#contacts" class="footer_link">Контакты</a>
-              <a href="cooperation.html" class="footer_link">Сотрудничество</a>
-          </nav>
-          <div class="footer_socials">
-              <a href="#" class="footer_link">Whatsapp</a>
-              <a href="#" class="footer_link">Telegram</a>
-              <a class="footer_developer" href="https://kant.studio" target="_blank">
-              <span>Разработка сайта:</span>
-              <img src="assets/img/KantLogo.svg" alt=""></a>
-          </div>
-      </div>
-      <div class="footer_bottom">
-        <a href="privacy.html" class="footer_privacy_link">Политика конфиденциальности</a>
-
-        <a class="footer_developer" href="https://kant.studio" target="_blank">
-        <span>Разработка сайта:</span>
-        <img src="assets/img/KantLogo.svg" alt=""></a>
-      </div>
-  </div>
-</footer> 
+    <div class="container footer_container">
+        <div class="footer_top">
+            <div class="logo_privacy_container">
+                <a href="index.html" class="footer_logo">
+                    <img src="assets/img/logo.svg" alt="Mobiarre">
+                </a>
+                <a href="#" class="footer_privacy_link">Политика конфиденциальности</a>
+            </div>
+            <nav class="footer_nav">
+                <div class="footer_nav_title">Каталог</div>
+                <a href="catalog.html" class="footer_link">Гостиные</a>
+                <a href="catalog.html" class="footer_link">Кухни</a>
+                <a href="catalog.html" class="footer_link">Гардеробные</a>
+                <a href="catalog.html" class="footer_link">Мягкая мебель</a>
+                <a href="catalog.html" class="footer_link">Кровати</a>
+            </nav>
+            <nav class="footer_nav">
+                <div class="footer_nav_title">Разделы</div>
+                <a href="about.html" class="footer_link">О компании</a>
+                <a href="contacts.html" class="footer_link">Контакты</a>
+                <a href="cooperation.html" class="footer_link">Сотрудничество</a>
+                <a href="blog.html" class="footer_link">Блог</a>
+                <a href="projects.html" class="footer_link">Наши проекты</a>
+            </nav>
+            <div class="footer_socials">
+                <div class="footer_nav_title">Соцсети</div>
+                <a href="#" class="footer_link">Telegram</a>
+                <a href="#" class="footer_link">Вконтакте</a>
+                <a class="footer_developer mobile_developer" href="https://kant.studio" target="_blank">
+                    <span>Разработка сайта:</span>
+                    <img src="assets/img/KantLogo.svg" alt="KANT.studio">
+                </a>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <a href="#" class="footer_privacy_link">Политика конфиденциальности</a>
+            <a class="footer_developer desktop_developer" href="https://kant.studio" target="_blank">
+                <span>Разработка сайта:</span>
+                <img src="assets/img/KantLogo.svg" alt="KANT.studio">
+            </a>
+        </div>
+    </div>
+</footer>
 <script src="assets/js/script.js"></script>
 </body>
 </html>
+

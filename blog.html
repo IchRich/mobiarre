@@ -1,52 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Блог — Mobiarre</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/favicon.ico">
 </head>
 <body>
-<header class="header">
-  <div class="container header_container">
-    <a href="index.html" class="header_logo"><img src="assets/img/logo.svg" alt=""></a>
-    <nav class="header_nav">
-          <div class="header_dropdown">
-              <a href="catalog.html" class="header_link">Каталог <span class="dropdown_arrow"></span></a>
-              <div class="dropdown_menu">
-                  <a href="kitchens.html" class="header_link">Кухни</a>
-                  <a href="living-rooms.html" class="header_link">Гостиные</a>
-                  <a href="soft-furniture.html" class="header_link">Мягкая мебель</a>
-              </div>
-          </div>
-          <div class="header_dropdown">
-              <a href="about.html" class="header_link">О компании<span class="dropdown_arrow"></span></a>
-              <div class="dropdown_menu">
-                  <a href="cooperation.html" class="header_link">Сотрудничество</a>
-                  <a href="blog.html" class="header_link">Блог</a>
-              </div>
-          </div>
-          <a href="projects.html" class="header_link">Наши проекты</a>
-          <a href="contacts.html" class="header_link">Контакты</a>
-      </nav>
-    <div class="btns_group">
-      <a href="+73466424288" class="header_link">+7 (346) 642-42-88</a>
-      <button class="header_button">Связаться с нами</button>
-   </div>
-   <button class="burger_menu" id="burgerMenu">
-     <div class="burger_icon">
-       <span class="burger_line"></span>
-       <span class="burger_line"></span>
-       <span class="burger_line"></span>
-     </div>
-   </button>
-  </div>
-</header>
-
-<!-- Мобильное меню -->
 <div class="mobile_menu_overlay" id="mobileMenuOverlay">
   <div class="mobile_menu">
     <div class="mobile_menu_header">
@@ -54,22 +15,16 @@
     </div>
     
     <nav class="mobile_menu_nav">
-      <div class="mobile_menu_dropdown">
-        <a href="catalog.html" class="mobile_menu_link">Каталог <span class="mobile_dropdown_arrow">▼</span></a>
-        <div class="mobile_dropdown_menu">
-          <a href="kitchens.html" class="mobile_menu_link">Кухни</a>
-          <a href="living-rooms.html" class="mobile_menu_link">Гостиные</a>
-          <a href="soft-furniture.html" class="mobile_menu_link">Мягкая мебель</a>
-        </div>
-      </div>
+        <a href="catalog.html" class="mobile_menu_link">Каталог</a>
+        <a href="catalog.html" class="mobile_menu_link">Кухни</a>
+        <a href="catalog.html" class="mobile_menu_link">Гостиные</a>
+        <a href="catalog.html" class="mobile_menu_link">Гардеробные</a>
+        <a href="catalog.html" class="mobile_menu_link">Мягкая мебель</a>
+        <a href="catalog.html" class="mobile_menu_link">Кровати</a>
       
-      <div class="mobile_menu_dropdown">
-        <a href="about.html" class="mobile_menu_link">О компании <span class="mobile_dropdown_arrow">▼</span></a>
-        <div class="mobile_dropdown_menu">
-          <a href="cooperation.html" class="mobile_menu_link">Сотрудничество</a>
-          <a href="blog.html" class="mobile_menu_link">Блог</a>
-        </div>
-      </div>
+        <a href="about.html" class="mobile_menu_link">О компании</a>
+        <a href="cooperation.html" class="mobile_menu_link">Сотрудничество</a>
+        <a href="blog.html">Блог</a>
       
       <a href="projects.html" class="mobile_menu_link">Наши проекты</a>
       <a href="contacts.html" class="mobile_menu_link">Контакты</a>
@@ -82,192 +37,113 @@
   </div>
 </div>
 
-  <section class="blog_page">
-    <div class="container">
-        <div class="breadcrumbs">
-            <a href="index.html">Главная</a> <span class="crumb_sep"></span> <span>Блог</span>
+<header class="header">
+  <div class="container header_container">
+    <a href="index.html" class="header_logo"><img src="assets/img/logo.svg" alt=""></a>
+      <nav class="header_nav">
+        <div class="header_dropdown">
+            <p class="header_link">Каталог <span class="dropdown_arrow"></span></p>
+          <div class="dropdown_menu">
+            <a href="catalog.html" class="header_link">Кухни</a>
+            <a href="catalog.html" class="header_link">Гостиные</a>
+            <a href="catalog.html" class="header_link">Гардеробные</a>
+            <a href="catalog.html" class="header_link">Мягкая мебель</a>
+            <a href="catalog.html" class="header_link">Кровати</a>
+          </div>
         </div>
-      <h1 class="blog_title animate_on_scroll headline2">БЛОГ</h1>
-      <div class="blog_filters animate_on_scroll">
-        <button class="blog_filter descriptor">Все статьи <span class="filter_count">24</span></button>
-        <button class="blog_filter descriptor">Тренды <span class="filter_count">8</span></button>
-        <button class="blog_filter descriptor">Практические советы <span class="filter_count">3</span></button>
-        <button class="blog_filter descriptor">Мебель и материалы <span class="filter_count">7</span></button>
-        <button class="blog_filter descriptor">Лайфхаки и DIY <span class="filter_count">6</span></button>
-      </div>
-      
-      <div class="blog_grid animate_on_scroll">
-        <article class="blog_card">
-          <div class="blog_card_bg" style="background-image: url('assets/img/blog1.png');"></div>
-          <div class="blog_card_content">
-            <p class="Descriptor3">28 апреля, 2025</p>
-            <p class="text6">Как выбрать дизайн-проект интерьера: 5 советов</p>
-          </div>
-        </article>
 
-        <article class="blog_card">
-          <div class="blog_card_bg" style="background-image: url('assets/img/blog2.png');"></div>
-          <div class="blog_card_content">
-            <p class="Descriptor3">28 апреля, 2025</p>
-            <p class="text6">Как выбрать дизайн-проект интерьера: 5 советов</p>
+        <div class="header_dropdown">
+          <a href="about.html" class="header_link">О компании<span class="dropdown_arrow"></span></a>
+          <div class="dropdown_menu">
+            <a href="cooperation.html" class="header_link">Сотрудничество</a>
+            <a href="blog.html" class="header_link">Блог</a>
           </div>
-        </article>
-
-        <article class="blog_card">
-          <div class="blog_card_bg" style="background-image: url('assets/img/blog3.png');"></div>
-          <div class="blog_card_content">
-            <p class="Descriptor3">28 апреля, 2025</p>
-            <p class="text6">Как выбрать дизайн-проект интерьера: 5 советов</p>
-          </div>
-        </article>
-
-        <article class="blog_card">
-          <div class="blog_card_bg" style="background-image: url('assets/img/blog4.png');"></div>
-          <div class="blog_card_content">
-            <p class="Descriptor3">28 апреля, 2025</p>
-            <p class="text6">Как выбрать дизайн-проект интерьера: 5 советов</p>
-          </div>
-        </article>
-
-                 <article class="blog_card">
-          <div class="blog_card_bg" style="background-image: url('assets/img/blog1.png');"></div>
-          <div class="blog_card_content">
-            <p class="Descriptor3">28 апреля, 2025</p>
-            <p class="text6">Как выбрать дизайн-проект интерьера: 5 советов</p>
-          </div>
-        </article>
-
-                 <article class="blog_card">
-          <div class="blog_card_bg" style="background-image: url('assets/img/blog2.png');"></div>
-          <div class="blog_card_content">
-            <p class="Descriptor3">28 апреля, 2025</p>
-            <p class="text6">Как выбрать дизайн-проект интерьера: 5 советов</p>
-          </div>
-        </article>
-
-                 <article class="blog_card">
-          <div class="blog_card_bg" style="background-image: url('assets/img/blog3.png');"></div>
-          <div class="blog_card_content">
-            <p class="Descriptor3">28 апреля, 2025</p>
-            <p class="text6">Как выбрать дизайн-проект интерьера: 5 советов</p>
-          </div>
-        </article>
-
-                 <article class="blog_card">
-          <div class="blog_card_bg" style="background-image: url('assets/img/blog4.png');"></div>
-          <div class="blog_card_content">
-            <p class="Descriptor3">28 апреля, 2025</p>
-            <p class="text6">Как выбрать дизайн-проект интерьера: 5 советов</p>
-          </div>
-        </article>
-
-                 <article class="blog_card">
-          <div class="blog_card_bg" style="background-image: url('assets/img/blog1.png');"></div>
-          <div class="blog_card_content">
-            <p class="Descriptor3">28 апреля, 2025</p>
-            <p class="text6">Как выбрать дизайн-проект интерьера: 5 советов</p>
-          </div>
-        </article>
-
-                 <article class="blog_card">
-          <div class="blog_card_bg" style="background-image: url('assets/img/blog2.png');"></div>
-          <div class="blog_card_content">
-            <p class="Descriptor3">28 апреля, 2025</p>
-            <p class="text6">Как выбрать дизайн-проект интерьера: 5 советов</p>
-          </div>
-        </article>
-
-                 <article class="blog_card">
-          <div class="blog_card_bg" style="background-image: url('assets/img/blog3.png');"></div>
-          <div class="blog_card_content">
-            <p class="Descriptor3">28 апреля, 2025</p>
-            <p class="text6">Как выбрать дизайн-проект интерьера: 5 советов</p>
-          </div>
-        </article>
-
-                 <article class="blog_card">
-          <div class="blog_card_bg" style="background-image: url('assets/img/blog4.png');"></div>
-          <div class="blog_card_content">
-            <p class="Descriptor3">28 апреля, 2025</p>
-            <p class="text6">Как выбрать дизайн-проект интерьера: 5 советов</p>
-          </div>
-        </article>
-      </div>
-        <button class="load_more_button" type="button">Загрузить еще</button>
-    </div>
-  </section>
-
-<section class="turnkey">
-<div class="container">
-  <h2 class="turnkey_title headline2 animate_on_scroll">Полная комплектация под ключ</h2>
-  <div class="turnkey_content animate_on_scroll">
-    <div class="turnkey_description">
-        <p class="text7">Мы обеспечиваем все этапы создания интерьера — от дизайна до реализации. Подберем материалы, мебель и аксессуары, чтобы ваш проект был завершённым и функциональным. Также у нас предусмотрена рассрочка на все виды услуг!</p>
-        <span class="soc_group">
-          <p class="text_social">напишите нам</p>
-          <a href="" class="soc_icon"><img src="assets/img/telegramIcon.svg" alt=""></a>
-          <a href="" class="soc_icon"><img src="assets/img/WhatsAppIcon.svg" alt=""></a>
-        </span>
-    </div>
-    <form class="turnkey_form">
-        <div class="form_group">
-            <input type="text" id="name" placeholder="Ваше имя" required>
         </div>
-        <div class="form_group">
-            <input type="tel" id="phone" placeholder="Ваш телефон" required>
-        </div>
-        <div class="check">
-            <input type="checkbox" required><p class="privacy_policy">Отправляя форму, я соглашаюсь с политикой конфиденциальности</p>
-        </div>
-        <button type="submit" class="form_button">Связаться с нами</button>
-    </form>
-      <span class="soc_group">
-        <p class="text_social">напишите нам</p>
-        <a href="" class="soc_icon"><img src="assets/img/telegramIcon.svg" alt=""></a>
-        <a href="" class="soc_icon"><img src="assets/img/WhatsAppIcon.svg" alt=""></a>
-      </span>
+
+        <a href="projects.html" class="header_link">Наши проекты</a>
+        <a href="contacts.html" class="header_link">Контакты</a>
+      </nav>
+    <div class="btns_group">
+            <div class="text7 city_selector">
+              <label for="city_select">Выберите город:</label>
+              <select id="city_select" class="filter_select city_dropdown">
+                <option value="spb" selected="">Санкт-Петербург</option>
+                <option value="moscow">Москва</option>
+                <option value="kazan">Казань</option>
+                <option value="novosibirsk">Новосибирск</option>
+                <option value="nijnevartovsk">Нижневартовск</option>
+              </select>
+            </div>
+   </div>
+   <button class="burger_menu" id="burgerMenu">
+     <div class="burger_icon">
+       <span class="burger_line"></span>
+       <span class="burger_line"></span>
+       <span class="burger_line"></span>
+     </div>
+   </button>
   </div>
-</div>
+</header>
+
+<section class="blog_page">
+  <div class="container">
+    <div class="breadcrumbs"><a href="index.html">Главная</a> <span class="crumb_sep"></span> <span>Блог</span></div>
+    <h1 class="blog_title animate_on_scroll headline2">БЛОГ</h1>
+    <div class="blog_filters animate_on_scroll">
+      <button class="blog_filter descriptor">Все статьи <span class="filter_count">24</span></button>
+      <button class="blog_filter descriptor">Тренды <span class="filter_count">8</span></button>
+      <button class="blog_filter descriptor">Практические советы <span class="filter_count">3</span></button>
+      <button class="blog_filter descriptor">Мебель и материалы <span class="filter_count">7</span></button>
+      <button class="blog_filter descriptor">Лайфхаки и DIY <span class="filter_count">6</span></button>
+    </div>
+    <div class="blog_grid animate_on_scroll">
+      <article class="blog_card"><div class="blog_card_bg" style="background-image: url('assets/img/blog1.png');"></div><div class="blog_card_content"><p class="Descriptor3">28 апреля, 2025</p><p class="text6">Как выбрать дизайн-проект интерьера: 5 советов</p></div></article>
+      <article class="blog_card"><div class="blog_card_bg" style="background-image: url('assets/img/blog2.png');"></div><div class="blog_card_content"><p class="Descriptor3">28 апреля, 2025</p><p class="text6">Как выбрать дизайн-проект интерьера: 5 советов</p></div></article>
+      <article class="blog_card"><div class="blog_card_bg" style="background-image: url('assets/img/blog3.png');"></div><div class="blog_card_content"><p class="Descriptor3">28 апреля, 2025</p><p class="text6">Как выбрать дизайн-проект интерьера: 5 советов</p></div></article>
+      <article class="blog_card"><div class="blog_card_bg" style="background-image: url('assets/img/blog4.png');"></div><div class="blog_card_content"><p class="Descriptor3">28 апреля, 2025</p><p class="text6">Как выбрать дизайн-проект интерьера: 5 советов</p></div></article>
+    </div>
+    <button class="load_more_button" type="button">Загрузить еще</button>
+  </div>
 </section>
 
-  <footer class="footer">
-    <div class="container footer_container">
+<footer class="footer">
+  <div class="container footer_container">
       <div class="footer_top">
         <div class="logo_privacy_container">
           <a href="index.html" class="footer_logo">
-            <img src="assets/img/logo.svg" alt="Mobiarre">
+              <img src="assets/img/logo.svg" alt="Mobiarre">
           </a>
-          <a href="privacy.html" class="footer_privacy_link">Политика конфиденциальности</a>
-        </div>
-        <nav class="footer_nav">
-          <a href="catalog.html" class="footer_link">Каталог</a>
-          <a href="about.html" class="footer_link">О компании</a>
-          <a href="projects.html" class="footer_link">Наши проекты</a>
-        </nav>
-        <nav class="footer_nav">
-          <a href="blog.html" class="footer_link">Блог</a>
-          <a href="#contacts" class="footer_link">Контакты</a>
-          <a href="cooperation.html" class="footer_link">Сотрудничество</a>
-        </nav>
-        <div class="footer_socials">
-          <a href="#" class="footer_link">Whatsapp</a>
-          <a href="#" class="footer_link">Telegram</a>
-          <a href="#" class="footer_link">Instagram</a>
-          <a class="footer_developer" href="https://kant.studio" target="_blank">
-            <span>Разработка сайта:</span>
-            <img src="assets/img/KantLogo.svg" alt="KANT Studio">
-          </a>
-        </div>
+          <a href="#" class="footer_privacy_link">Политика конфиденциальности</a>
+          </div>
+          <nav class="footer_nav">
+              <a href="catalog.html" class="footer_link">Каталог</a>
+              <a href="about.html" class="footer_link">О компании</a>
+              <a href="projects.html" class="footer_link">Наши проекты</a>
+          </nav>
+          <nav class="footer_nav">
+              <a href="blog.html" class="footer_link">Блог</a>
+              <a href="contacts.html" class="footer_link">Контакты</a>
+              <a href="cooperation.html" class="footer_link">Сотрудничество</a>
+          </nav>
+          <div class="footer_socials">
+              <a href="#" class="footer_link">Whatsapp</a>
+              <a href="#" class="footer_link">Telegram</a>
+              <a class="footer_developer" href="https://kant.studio" target="_blank">
+              <span>Разработка сайта:</span>
+              <img src="assets/img/KantLogo.svg" alt=""></a>
+          </div>
       </div>
       <div class="footer_bottom">
-        <a href="privacy.html" class="footer_privacy_link">Политика конфиденциальности</a>
+        <a href="#" class="footer_privacy_link">Политика конфиденциальности</a>
 
         <a class="footer_developer" href="https://kant.studio" target="_blank">
         <span>Разработка сайта:</span>
         <img src="assets/img/KantLogo.svg" alt=""></a>
       </div>
-    </div>
-  </footer>
-  <script src="assets/js/script.js"></script>
+  </div>
+</footer> 
+
+<script src="assets/js/script.js"></script>
 </body>
 </html>
+

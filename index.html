@@ -3,73 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobiarre</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Мебель под заказ в Санкт-Петербурге</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/favicon.ico">
 </head>
 <body>
-<header class="header">
-  <div class="container header_container">
-    <a href="index.html" class="header_logo"><img src="assets/img/logo.svg" alt=""></a>
-    <nav class="header_nav">
-          <div class="header_dropdown">
-              <a href="catalog.html" class="header_link">Каталог <span class="dropdown_arrow"></span></a>
-              <div class="dropdown_menu">
-                  <a href="kitchens.html" class="header_link">Кухни</a>
-                  <a href="living-rooms.html" class="header_link">Гостиные</a>
-                  <a href="soft-furniture.html" class="header_link">Мягкая мебель</a>
-              </div>
-          </div>
-          <div class="header_dropdown">
-              <a href="about.html" class="header_link">О компании<span class="dropdown_arrow"></span></a>
-              <div class="dropdown_menu">
-                  <a href="cooperation.html" class="header_link">Сотрудничество</a>
-                  <a href="blog.html" class="header_link">Блог</a>
-              </div>
-          </div>
-          <a href="projects.html" class="header_link">Наши проекты</a>
-          <a href="contacts.html" class="header_link">Контакты</a>
-      </nav>
-    <div class="btns_group">
-      <a href="+73466424288" class="header_link">+7 (346) 642-42-88</a>
-      <button class="header_button">Связаться с нами</button>
-   </div>
-   <button class="burger_menu" id="burgerMenu">
-     <div class="burger_icon">
-       <span class="burger_line"></span>
-       <span class="burger_line"></span>
-       <span class="burger_line"></span>
-     </div>
-   </button>
-  </div>
-</header>
-
-<!-- Мобильное меню -->
 <div class="mobile_menu_overlay" id="mobileMenuOverlay">
   <div class="mobile_menu">
     <div class="mobile_menu_header">
-      <a href="index.html" class="mobile_menu_logo"><img src="assets/img/logo.svg" alt=""></a>
+      <a href="index.html" class="header_logo" style="filter: invert(1);">
+        <img src="assets/img/logo.svg" alt="">
+      </a>
+      <button class="mobile_menu_close" id="mobileMenuClose" style="visibility: hidden;">
+        <span class="close_line"></span>
+        <span class="close_line"></span>
+      </button>
     </div>
     
     <nav class="mobile_menu_nav">
-      <div class="mobile_menu_dropdown">
-        <a href="catalog.html" class="mobile_menu_link">Каталог <span class="mobile_dropdown_arrow">▼</span></a>
-        <div class="mobile_dropdown_menu">
-          <a href="kitchens.html" class="mobile_menu_link">Кухни</a>
-          <a href="living-rooms.html" class="mobile_menu_link">Гостиные</a>
-          <a href="soft-furniture.html" class="mobile_menu_link">Мягкая мебель</a>
-        </div>
-      </div>
+        <a href="catalog.html" class="mobile_menu_link">Каталог</a>
+        <a href="catalog.html" class="mobile_menu_link">Кухни</a>
+        <a href="catalog.html" class="mobile_menu_link">Гостиные</a>
+        <a href="catalog.html" class="mobile_menu_link">Гардеробные</a>
+        <a href="catalog.html" class="mobile_menu_link">Мягкая мебель</a>
+        <a href="catalog.html" class="mobile_menu_link">Кровати</a>
       
-      <div class="mobile_menu_dropdown">
-        <a href="about.html" class="mobile_menu_link">О компании <span class="mobile_dropdown_arrow">▼</span></a>
-        <div class="mobile_dropdown_menu">
-          <a href="cooperation.html" class="mobile_menu_link">Сотрудничество</a>
-          <a href="blog.html" class="mobile_menu_link">Блог</a>
-        </div>
-      </div>
+        <a href="about.html" class="mobile_menu_link">О компании</a>
+        <a href="cooperation.html" class="mobile_menu_link">Сотрудничество</a>
+        <a href="blog.html" class="mobile_menu_link">Блог</a>
       
       <a href="projects.html" class="mobile_menu_link">Наши проекты</a>
       <a href="contacts.html" class="mobile_menu_link">Контакты</a>
@@ -82,6 +43,52 @@
   </div>
 </div>
 
+<header class="header">
+  <div class="container header_container">
+    <a href="index.html" class="header_logo" style="filter: invert(0);">
+      <img src="assets/img/logo.svg" alt="">
+    </a>
+      <nav class="header_nav">
+        <div class="header_dropdown">
+            <p class="header_link">Каталог <span class="dropdown_arrow"></span></p>
+          <div class="dropdown_menu">
+            <a href="catalog.html" class="header_link">Кухни</a>
+            <a href="catalog.html" class="header_link">Гостиные</a>
+            <a href="catalog.html" class="header_link">Гардеробные</a>
+            <a href="catalog.html" class="header_link">Мягкая мебель</a>
+            <a href="catalog.html" class="header_link">Кровати</a>
+          </div>
+        </div>
+
+        <div class="header_dropdown">
+          <a href="about.html" class="header_link">О компании<span class="dropdown_arrow"></span></a>
+          <div class="dropdown_menu">
+            <a href="cooperation.html" class="header_link">Сотрудничество</a>
+            <a href="blog.html" class="header_link">Блог</a>
+          </div>
+        </div>
+
+        <a href="projects.html" class="header_link">Наши проекты</a>
+        <a href="contacts.html" class="header_link">Контакты</a>
+      </nav>
+    <div class="btns_group">
+      <a href="#" class="main_navigation_search">
+        <img src="assets/img/SearchIconWhite.svg" alt="">
+      </a>
+      <a href="tel:+73466424288" class="header_link">+7 (346) 642-42-88</a>
+      <button class="main_navigation_btn">Связаться с нами</button>
+   </div>
+   <button class="burger_menu" id="burgerMenu">
+     <div class="burger_icon">
+       <span class="burger_line"></span>
+       <span class="burger_line"></span>
+       <span class="burger_line"></span>
+     </div>
+   </button>
+  </div>
+</header>
+
+<!-- Hero -->
 <section class="hero">
     <video class="bg_video" autoplay muted loop playsinline>
         <source src="assets/video/fudji.mp4" type="video/mp4">
@@ -89,194 +96,354 @@
     <div class="container hero_section">
       <div class="hero_arrow_container">
         <h1 class="hero_desc headline2 animate_on_scroll">
-            мебель под&nbsp;заказ в&nbsp;санкт-петербурге
+            мебель под&nbsp;заказ <br> в&nbsp;санкт-петербурге
         </h1>
-        <img class="hero_arrow" src="assets/img/arrow.svg" alt="">
+        <a href="#categories-container" id="scrollToCategories" style="cursor: pointer;">
+          <img class="hero_arrow" src="assets/img/arrow.svg" alt="">
+        </a>
       </div>
+    </div>
+    
+    <div class="hero_socials_wrapper hero_socials_variant1">
+        <div class="hero_socials_dropdown">
+            <a href="#" class="hero_social_link">
+                <img src="assets/img/instagramIconWhite.svg" alt="Instagram">
+            </a>
+            <a href="#" class="hero_social_link">
+                <img src="assets/img/TelegramIconWhite.svg" alt="Telegram">
+            </a>
+            <a href="#" class="hero_social_link">
+                <img src="assets/img/WhatsAppIconWhite.svg" alt="WhatsApp">
+            </a>
+        </div>
+        <div class="hero_socials_trigger">
+            <img src="assets/img/checkMark.svg" alt="" class="socials_arrow">
+        </div>
     </div>
 </section>
 
-
-<section class="categories">
+<!-- Categories -->
+<section class="categories" id="categories-container">
   <h2 class="headline2">Каталог</h2>
   <div class="container animate_on_scroll">
-    <div class="category" onclick="window.location.href='kitchens.html';">
-      <div class="img_container">
-        <img src="assets/img/kitchen.jpg" alt="Кухни">
+    <div class="categories-grid-1024">
+      <div class="category-item" onclick="window.location.href='catalog.html';">
+        <div class="img_container">
+          <img src="assets/img/kitchen.jpg" alt="Кухни">
+        </div>
+        <p class="headline5">Кухни</p>
       </div>
-      <p class="headline5">Кухни</p>
+      <div class="category-item" onclick="window.location.href='catalog.html';">
+        <div class="img_container">
+          <img src="assets/img/livingroom.png" alt="Гостиные">
+        </div>
+        <p class="headline5">Гостиные</p>
+      </div>
+      <div class="category-item" onclick="window.location.href='catalog.html';">
+        <div class="img_container">
+          <img src="assets/img/SoftFurniture.jpg" alt="Мягкая мебель">
+        </div>
+        <p class="headline5">Мягкая мебель</p>
+      </div>
+      <div class="category-item" onclick="window.location.href='catalog.html';">
+        <div class="img_container">
+          <img src="assets/img/category2.png" alt="Гардеробные">
+        </div>
+        <p class="headline5">Гардеробные</p>
+      </div>
+      <div class="category-item" onclick="window.location.href='catalog.html';">
+        <div class="img_container">
+          <img src="assets/img/bed.png" alt="Кровати">
+        </div>
+        <p class="headline5">Кровати</p>
+      </div>
     </div>
-    
-    <div class="category" onclick="window.location.href='living-rooms.html';">
-      <div class="img_container">
-        <img src="assets/img/livingroom.png" alt="Гостиные">
+
+    <div class="categories-container">
+      <div class="container animate_on_scroll categories-container">
+        <div class="category-left" onclick="window.location.href='catalog.html';">
+          <div class="img_container">
+            <img src="assets/img/kitchen.jpg" alt="Кухни">
+          </div>
+          <p class="headline5">Кухни</p>
+        </div>
+        <div class="categories-right">
+          <div class="category-right-row">
+            <div class="category-right" onclick="window.location.href='catalog.html';">
+              <div class="img_container">
+                <img src="assets/img/livingroom.png" alt="Гостиные">
+              </div>
+              <p class="headline5">Гостиные</p>
+            </div>
+            <div class="category-right" onclick="window.location.href='catalog.html';">
+              <div class="img_container">
+                <img src="assets/img/SoftFurniture.jpg" alt="Мягкая мебель">
+              </div>
+              <p class="headline5">Мягкая мебель</p>
+            </div>
+          </div>
+          <div class="category-right-row">
+            <div class="category-right" onclick="window.location.href='catalog.html';">
+              <div class="img_container">
+                <img src="assets/img/category2.png" alt="Гардеробные">
+              </div>
+              <p class="headline5">Гардеробные</p>
+            </div>
+            <div class="category-right" onclick="window.location.href='catalog.html';">
+              <div class="img_container">
+                <img src="assets/img/bed.png" alt="Кровати">
+              </div>
+              <p class="headline5">Кровати</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <p class="headline5">Гостиные</p>
-    </div>
-    
-    <div class="category" onclick="window.location.href='soft-furniture.html';">
-      <div class="img_container">
-        <img src="assets/img/softFurniture.jpg" alt="Мягкая мебель">
-      </div>
-      <p class="headline5">Мягкая мебель</p>
     </div>
   </div>
 </section>
 
+<!-- Projects (dinamyc showcase) -->
 <section class="projects">
   <div class="container">
-    <h2 class="animate_on_scroll project headline2">Наши проекты</h2>
-    <div class="project animate_on_scroll">
+    <h2 class="animate_on_scroll headline2 title-headline2-project">Наши проекты</h2>
+    
+    <div class="project animate_on_scroll project_info_project desktop_only">
       <div class="project_info">
-        <div class="descriptor">01</div>
-        <h3 class="project_title headline3">Кухня Фреда</h3>
-        <p class="project_description text7">Современное пространство, созданное для человека, который ценит эстетику и порядок. "Кухня Фреда" — это минимализм в форме, но максимум в комфорте. Проект сочетает лаконичные линии, тёплую палитру и интеллектуальные решения для хранения.</p>
-        <a href="#" class="project_link">Подробнее →</a>
+        <h3 class="project_title headline3">КУХНЯ ФРЕДА</h3>
+        <div class="project_description text7">
+          <p>Современное пространство, созданное для человека, который ценит эстетику и порядок. "Кухня Фреда" — это минимализм в форме, но максимум в комфорте. Проект сочетает лаконичные линии, тёплую палину и интеллектуальные решения для хранения.</p>
+        </div>
+        <a href="projects.html" class="project_link">Подробнее <img src="assets/img/arrow-up-right_button.png" class="project_button" alt="Кнопка"></a>
       </div>
       <div class="project_image_wrapper">
-        <p class="project_image_caption descriptor">Кухня Фреда</p>
-        <img src="assets/img/kitchenfred.png" alt="Кухня Фреда">
+        <img src="assets/img/kitchenfred.png" alt="КУХНЯ ФРЕДА">
       </div>
     </div>
-    <div class="project animate_on_scroll">
+    <div class="project animate_on_scroll project_info_project desktop_only">
       <div class="project_info">
-        <div class="descriptor">02</div>
-        <h3 class="project_title headline3">Кухня Фреда</h3>
-        <p class="project_description text7">Современное пространство, созданное для человека, который ценит эстетику и порядок. "Кухня Фреда" — это минимализм в форме, но максимум в комфорте. Проект сочетает лаконичные линии, тёплую палитру и интеллектуальные решения для хранения.</p>
-        <a href="#" class="project_link">Подробнее →</a>
+        <h3 class="project_title headline3">КУХНЯ ФРЕДА</h3>
+        <div class="project_description text7">
+          <p>Современное пространство, созданное для человека, который ценит эстетику и порядок. "Кухня Фреда" — это минимализм в форме, но максимум в комфорте. Проект сочетает лаконичные линии, тёплую палину и интеллектуальные решения для хранения.</p>
+        </div>
+        <a href="projects.html" class="project_link">Подробнее <img src="assets/img/arrow-up-right_button.png" class="project_button" alt="Кнопка"></a>
       </div>
       <div class="project_image_wrapper">
-        <p class="project_image_caption descriptor">Кухня Фреда</p>
-        <img src="assets/img/kitchenfred2.png" alt="Кухня Фреда">
+        <img src="assets/img/kitchenfred2.png" alt="КУХНЯ ФРЕДА">
       </div>
     </div>
-    <div class="project animate_on_scroll">
+    <div class="project animate_on_scroll project_info_project desktop_only">
       <div class="project_info">
-        <div class="descriptor">03</div>
-        <h3 class="project_title headline3">Кухня Фреда</h3>
-        <p class="project_description text7">Современное пространство, созданное для человека, который ценит эстетику и порядок. "Кухня Фреда" — это минимализм в форме, но максимум в комфорте. Проект сочетает лаконичные линии, тёплую палитру и интеллектуальные решения для хранения.</p>
-        <a href="#" class="project_link">Подробнее →</a>
+        <h3 class="project_title headline3">КУХНЯ ФРЕДА</h3>
+        <div class="project_description text7">
+          <p>Современное пространство, созданное для человека, который ценит эстетику и порядок. "Кухня Фреда" — это минимализм в форме, но максимум в комфорте. Проект сочетает лаконичные линии, тёплую палину и интеллектуальные решения для хранения.</p>
+        </div>
+        <a href="projects.html" class="project_link">Подробнее <img src="assets/img/arrow-up-right_button.png" class="project_button" alt="Кнопка"></a>
       </div>
       <div class="project_image_wrapper">
-        <p class="project_image_caption descriptor">Кухня Фреда</p>
-        <img src="assets/img/kitchen.jpg" alt="Кухня Фреда">
+        <img src="assets/img/kitchen.png" alt="КУХНЯ ФРЕДА">
       </div>
     </div>
-    <div class="project animate_on_scroll">
-      <div class="project_info">
-        <h3 class="project_title headline3">Портфолио</h3>
-        <p class="project_description text7">Современное пространство, созданное для человека, который ценит эстетику и порядок. "Кухня Фреда" — это минимализм в форме, но максимум в комфорте. Проект сочетает лаконичные линии, тёплую палитру и интеллектуальные решения для хранения.</p>
-        <a href="#" class="project_link">Подробнее →</a>
+
+    <div class="project-mobile animate_on_scroll project_info_project mobile_only">
+      <div class="project-mobile-header">
+        <h3 class="project_title headline3">КУХНЯ ФРЕДА</h3>
       </div>
-      <div class="project_image_wrapper">
-        <img src="assets/img/portfolio.png" alt="Кухня Фреда">
+      <div class="project-mobile-image">
+        <img src="assets/img/kitchenfred.png" alt="КУХНЯ ФРЕДА">
+      </div>
+      <div class="project-mobile-content">
+        <div class="project_description text7">
+          <p>Современное пространство, созданное для человека, который ценит эстетику и порядок. "Кухня Фреда" — это минимализм в форме, но максимум в комфорте. Проект сочетает лаконичные линии, тёплую палину и интеллектуальные решения для хранения.</p>
+        </div>
+        <a href="projects.html" class="project_link">Подробнее <img src="assets/img/arrow-up-right_button.png" class="project_button" alt="Кнопка"></a>
+      </div>
+    </div>
+    <div class="project-mobile animate_on_scroll project_info_project mobile_only">
+      <div class="project-mobile-header">
+        <h3 class="project_title headline3">КУХНЯ ФРЕДА</h3>
+      </div>
+      <div class="project-mobile-image">
+        <img src="assets/img/kitchenfred2.png" alt="КУХНЯ ФРЕДА">
+      </div>
+      <div class="project-mobile-content">
+        <div class="project_description text7">
+          <p>Современное пространство, созданное для человека, который ценит эстетику и порядок. "Кухня Фреда" — это минимализм в форме, но максимум в комфорте. Проект сочетает лаконичные линии, тёплую палину и интеллектуальные решения для хранения.</p>
+        </div>
+        <a href="projects.html" class="project_link">Подробнее <img src="assets/img/arrow-up-right_button.png" class="project_button" alt="Кнопка"></a>
+      </div>
+    </div>
+    <div class="project-mobile animate_on_scroll project_info_project mobile_only">
+      <div class="project-mobile-header">
+        <h3 class="project_title headline3">КУХНЯ ФРЕДА</h3>
+      </div>
+      <div class="project-mobile-image">
+        <img src="assets/img/kitchen.png" alt="КУХНЯ ФРЕДА">
+      </div>
+      <div class="project-mobile-content">
+        <div class="project_description text7">
+          <p>Современное пространство, созданное для человека, который ценит эстетику и порядок. "Кухня Фреда" — это минимализм в форме, но максимум в комфорте. Проект сочетает лаконичные линии, тёплую палину и интеллектуальные решения для хранения.</p>
+        </div>
+        <a href="projects.html" class="project_link">Подробнее <img src="assets/img/arrow-up-right_button.png" class="project_button" alt="Кнопка"></a>
+      </div>
+    </div>
+
+    <div class="portfolio-section">
+      <div class="project animate_on_scroll project_portfolio desktop_portfolio desktop_only">
+        <div class="project_image_wrapper portfolio_image_wrapper">
+          <img src="assets/img/portfolio.png" alt="Кухня Фреда">
+        </div>
+        <div class="project_info portfolio_info">
+          <h3 class="project_title headline3">Портфолио</h3>
+          <p class="project_description text7">Современное пространство, созданное для человека, который ценит эстетику и порядок. "Кухня Фреда" — это минимализм в форме, но максимум в комфорте. Проект сочетает лаконичные линии, тёплую палитру и интеллектуальные решения для хранения.</p>
+          <button type="submit" class="form_button portfolio_button" onclick="window.location.href='projects.html'">Наши проекты</button>
+        </div>
+      </div>
+
+      <div class="portfolio-mobile mobile_only">
+        <h3 class="portfolio-title headline3">Портфолио</h3>
+        <div class="portfolio-mobile-image">
+          <img src="assets/img/portfolio.png" alt="Кухня Фреда">
+        </div>
+        <p class="portfolio-description text7">Современное пространство, созданное для человека, который ценит эстетику и порядок. "Кухня Фреда" — это минимализм в форме, но максимум в комфорте. Проект сочетает лаконичные линии, тёплую палитру и интеллектуальные решения для хранения.</p>
+        <button type="submit" class="form_button portfolio-btn" onclick="window.location.href='projects.html'">Наши проекты</button>
       </div>
     </div>
   </div>
 </section>
 
+<!-- Turnkey CTA -->
 <section class="turnkey">
-<div class="container">
-  <h2 class="turnkey_title headline2 animate_on_scroll">Полная комплектация под ключ</h2>
-  <div class="turnkey_content animate_on_scroll">
-    <div class="turnkey_description">
-        <p class="text7">Мы обеспечиваем все этапы создания интерьера — от дизайна до реализации. Подберем материалы, мебель и аксессуары, чтобы ваш проект был завершённым и функциональным. Также у нас предусмотрена рассрочка на все виды услуг!</p>
-        <span class="soc_group">
-          <p class="text_social">напишите нам</p>
-          <a href="" class="soc_icon"><img src="assets/img/telegramIcon.svg" alt=""></a>
-          <a href="" class="soc_icon"><img src="assets/img/WhatsAppIcon.svg" alt=""></a>
-        </span>
-    </div>
-    <form class="turnkey_form">
+  <div class="container">
+    <h2 class="turnkey_title headline2 animate_on_scroll">Полная комплектация под ключ</h2>
+    <div class="turnkey_content animate_on_scroll">
+      <div class="turnkey_description">
+          <p class="text7">Мы обеспечиваем все этапы создания интерьера — от дизайна до реализации. Подберем материалы, мебель и аксессуары, чтобы ваш проект был завершённым и функциональным. Также у нас предусмотрена рассрочка на все виды услуг!</p>
+          <span class="soc_group">
+            <p class="text_social">напишите нам</p>
+            <a href="#" class="soc_icon"><img src="assets/img/telegramIcon.svg" alt="Telegram"></a>
+            <a href="#" class="soc_icon"><img src="assets/img/WhatsAppIcon.svg" alt="WhatsApp"></a>
+          </span>
+      </div>
+
+      <form class="turnkey_form" method="post" enctype="multipart/form-data">
         <div class="form_group">
-            <input type="text" id="name" placeholder="Ваше имя" required>
+          <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+          <div class="field_error" data-for="name" style="display:none;color:#c00;font-size:0.9em;"></div>
         </div>
         <div class="form_group">
-            <input type="tel" id="phone" placeholder="Ваш телефон" required>
+          <input type="tel" id="phone" name="phone" placeholder="Ваш телефон" required>
+           <div class="field_error" data-for="phone" style="display:none;color:#c00;font-size:0.9em;"></div>
         </div>
         <div class="check">
-            <input type="checkbox" required><p class="privacy_policy">Отправляя форму, я соглашаюсь с политикой конфиденциальности</p>
+          <label class="privacy_policy">
+            <input type="checkbox" name="privacy" required>
+            Отправляя форму, я соглашаюсь с политикой конфиденциальности
+          </label>
+          <div class="field_error" data-for="privacy" style="display:none;color:#c00;font-size:0.9em;"></div>
         </div>
+
+        <div id="inquiry_form_status" style="display:none; margin-bottom:12px;"></div>
         <button type="submit" class="form_button">Связаться с нами</button>
-    </form>
+      </form>
+
       <span class="soc_group">
         <p class="text_social">напишите нам</p>
-        <a href="" class="soc_icon"><img src="assets/img/telegramIcon.svg" alt=""></a>
-        <a href="" class="soc_icon"><img src="assets/img/WhatsAppIcon.svg" alt=""></a>
+        <a href="#" class="soc_icon"><img src="assets/img/telegramIcon.svg" alt="Telegram"></a>
+        <a href="#" class="soc_icon"><img src="assets/img/WhatsAppIcon.svg" alt="WhatsApp"></a>
       </span>
+    </div>
   </div>
-</div>
 </section>
 
-  <section id="about" class="about">
-    <!-- <img src="assets/img/kitchen.jpg" class="about_img_animation" alt="Интерьер кухни"> -->
-    <div class="container">
+<!-- About preview -->
+<section id="about" class="about">
+  <div class="container">
     <h2 class="about_title headline2 animate_on_scroll">О компании</h2>
-      <div class="about_container">
+    <div class="about_container">
       <div class="about_image animate_on_scroll">
-            <img src="assets/img/kitchen.jpg" alt="Интерьер кухни">
-            <p class="text3 animate_on_scroll">Наша студия специализируется на создании и воплощении дизайн-проектов интерьеров, которые сочетают в себе эстетику, практичность и индивидуальный подход. Мы внимательно прислушиваемся к вашим идеям и желаниям, чтобы превратить их в продуманные до мелочей решения, отражающие ваш образ жизни, вкусы и потребности.</p>
-        </div>
-        <div class="about_content">
-          <p class="text3 animate_on_scroll">Наша студия специализируется на создании и воплощении дизайн-проектов интерьеров, которые сочетают в себе эстетику, практичность и индивидуальный подход. Мы внимательно прислушиваемся к вашим идеям и желаниям, чтобы превратить их в продуманные до мелочей решения, отражающие ваш образ жизни, вкусы и потребности.</p>
-            <div class="about_stats">
-              <div class="stat animate_on_scroll">
-                    <p class="numbers">20&nbsp;лет</p>
-                    <p class="stat_text text4">на рынке дизайна интерьеров</p>
-                </div>
-              <div class="stat stat_right animate_on_scroll">
-                    <p class="numbers">>200</p>
-                    <p class="stat_text text4">реализованных проектов</p>
-                </div>
-              <div class="stat animate_on_scroll">
-                    <p class="numbers">100%</p>
-                    <p class="stat_text text4">довольных клиентов</p>
-                </div>
-            </div>
-          <button class="btn_transparent">Подробнее о нас</button>
+        <img src="assets/img/coop.png" alt="Интерьер кухни">
+        <p class="text3 animate_on_scroll">Наша студия специализируется на создании и воплощении дизайн-проектов интерьеров, которые сочетают в себе эстетику, практичность и индивидуальный подход. Мы внимательно прислушиваемся к вашим идеям и желаниям, чтобы превратить их в продуманные до мелочей решения, отражающие ваш образ жизни, вкусы и потребности.</p>
       </div>
+      <div class="about_content">
+        <p class="text3 animate_on_scroll">Наша студия специализируется на создании и воплощении дизайн-проектов интерьеров, которые сочетают в себе эстетику, практичность и индивидуальный подход. Мы внимательно прислушиваемся к вашим идеям и желаниям, чтобы превратить их в продуманные до мелочей решения, отражающие ваш образ жизни, вкусы и потребности.</p>
+        <div class="about_stats">
+          <div class="stat animate_on_scroll">
+            <p class="numbers">20&nbsp;лет</p>
+            <p class="stat_text text4">на рынке дизайна интерьеров</p>
+          </div>
+          <div class="stat stat_right animate_on_scroll">
+            <p class="numbers">>200</p>
+            <p class="stat_text text4">реализованных проектов</p>
+          </div>
+          <div class="stat stat_left animate_on_scroll">
+            <p class="numbers">100%</p>
+            <p class="stat_text text4">довольных клиентов</p>
+          </div>
+        </div>
+        <a class="btn_transparent" href="about.html">Подробнее о нас</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-
-  <section id="blog" class="blog">
-    <div class="container">
+<!-- Blog preview -->
+<section id="blog" class="blog">
+  <div class="container">
     <h2 class="blog_title headline2 animate_on_scroll">Блог</h2>
     <div class="blog_grid animate_on_scroll">
       <article class="blog_card">
-        <div class="blog_card_bg" style="background-image: url('assets/img/blog1.png');"></div>
+        <div class="blog_card_header">
+          <p class="blog_date">28 апреля, 2025</p>
+        </div>
+        <div class="blog_card_image">
+          <img src="assets/img/blog1.png" alt="Как выбрать дизайн-проект интерьера: 5 советов">
+        </div>
         <div class="blog_card_content">
-          <p class="Descriptor3">28 апреля, 2025</p>
-          <p class="text6">Как выбрать дизайн-проект интерьера: 5 советов</p>
-          </div>
-        </article>
+          <h3 class="blog_card_title">Как выбрать дизайн-проект<br> интерьера: 5 советов</h3>
+        </div>
+      </article>
+      
       <article class="blog_card">
-        <div class="blog_card_bg" style="background-image: url('assets/img/blog2.png');"></div>
+        <div class="blog_card_header">
+          <p class="blog_date">28 апреля, 2025</p>
+        </div>
+        <div class="blog_card_image">
+          <img src="assets/img/blog2.png" alt="Как выбрать дизайн-проект интерьера: 5 советов">
+        </div>
         <div class="blog_card_content">
-          <p class="Descriptor3">28 апреля, 2025</p>
-          <p class="text6">Как выбрать дизайн-проект интерьера: 5 советов</p>
-          </div>
-        </article>
+          <h3 class="blog_card_title">Как выбрать дизайн-проект<br> интерьера: 5 советов</h3>
+        </div>
+      </article>
+      
       <article class="blog_card">
-        <div class="blog_card_bg" style="background-image: url('assets/img/blog3.png');"></div>
+        <div class="blog_card_header">
+          <p class="blog_date">28 апреля, 2025</p>
+        </div>
+        <div class="blog_card_image">
+          <img src="assets/img/blog3.png" alt="Как выбрать дизайн-проект интерьера: 5 советов">
+        </div>
         <div class="blog_card_content">
-          <p class="Descriptor3">28 апреля, 2025</p>
-          <p class="text6">Как выбрать дизайн-проект интерьера: 5 советов</p>
-          </div>
-        </article>
+          <h3 class="blog_card_title">Как выбрать дизайн-проект<br> интерьера: 5 советов</h3>
+        </div>
+      </article>
+      
       <article class="blog_card">
-        <div class="blog_card_bg" style="background-image: url('assets/img/blog4.png');"></div>
+        <div class="blog_card_header">
+          <p class="blog_date">28 апреля, 2025</p>
+        </div>
+        <div class="blog_card_image">
+          <img src="assets/img/blog4.png" alt="Как выбрать дизайн-проект интерьера: 5 советов">
+        </div>
         <div class="blog_card_content">
-          <p class="Descriptor3">28 апреля, 2025</p>
-          <p class="text6">Как выбрать дизайн-проект интерьера: 5 советов</p>
-          </div>
-        </article>
-      </div>
-      <button class="blog_load_more">Читать больше</button>
+          <h3 class="blog_card_title">Как выбрать дизайн-проект<br> интерьера: 5 советов</h3>
+        </div>
+      </article>
     </div>
-  </section>
+    <a class="blog_load_more" href="blog.html">Читать больше</a>
+  </div>
+</section>
 
+<!-- FAQ -->
 <section id="faq" class="faq">
   <div class="container">
     <h2 class="faq_title headline2 animate_on_scroll">Часто задаваемые вопросы</h2>
@@ -284,66 +451,43 @@
       <div class="faq_item animate_on_scroll">
         <div class="faq_question">
           <h5 class="headline5">Сколько стоит дизайн-проект интерьера?</h5>
-          <div class="faq_toggle">
-            <span class="faq_cross"></span>
-          </div>
+          <div class="faq_toggle"><span class="faq_cross"></span></div>
         </div>
-        <div class="faq_answer">
-          <p class="text8">Стоимость зависит от площади помещения, стиля и уровня детализации проекта. Мы предлагаем несколько пакетов — от базового до полного сопровождения. Точный расчет вы сможете получить после бесплатной консультации.</p>
-        </div>
+        <div class="faq_answer"><p class="text8">Стоимость зависит от площади помещения, стиля и уровня детализации проекта. Мы предлагаем несколько пакетов — от базового до полного сопровождения. Точный расчет вы сможете получить после бесплатной консультации.</p></div>
       </div>
-      
       <div class="faq_item animate_on_scroll">
         <div class="faq_question">
           <h5 class="headline5">Сколько времени занимает создание дизайн-проекта?</h5>
-          <div class="faq_toggle">
-            <span class="faq_cross"></span>
-          </div>
+          <div class="faq_toggle"><span class="faq_cross"></span></div>
         </div>
-        <div class="faq_answer">
-          <p class="text8">Стоимость зависит от площади помещения, стиля и уровня детализации проекта. Мы предлагаем несколько пакетов — от базового до полного сопровождения. Точный расчет вы сможете получить после бесплатной консультации.</p>
-        </div>
+        <div class="faq_answer"><p class="text8">Стоимость зависит от площади помещения, стиля и уровня детализации проекта. Мы предлагаем несколько пакетов — от базового до полного сопровождения. Точный расчет вы сможете получить после бесплатной консультации.</p></div>
       </div>
-      
       <div class="faq_item animate_on_scroll">
         <div class="faq_question">
           <h5 class="headline5">Чем отличается 3D-визуализация от чертежей?</h5>
-          <div class="faq_toggle">
-            <span class="faq_cross"></span>
-          </div>
+          <div class="faq_toggle"><span class="faq_cross"></span></div>
         </div>
-        <div class="faq_answer">
-          <p class="text8">Стоимость зависит от площади помещения, стиля и уровня детализации проекта. Мы предлагаем несколько пакетов — от базового до полного сопровождения. Точный расчет вы сможете получить после бесплатной консультации.</p>
-        </div>
+        <div class="faq_answer"><p class="text8">Стоимость зависит от площади помещения, стиля и уровня детализации проекта. Мы предлагаем несколько пакетов — от базового до полного сопровождения. Точный расчет вы сможете получить после бесплатной консультации.</p></div>
       </div>
-      
       <div class="faq_item animate_on_scroll">
         <div class="faq_question">
           <h5 class="headline5">Делаете ли вы авторский надзор за ремонтом?</h5>
-          <div class="faq_toggle">
-            <span class="faq_cross"></span>
-          </div>
+          <div class="faq_toggle"><span class="faq_cross"></span></div>
         </div>
-        <div class="faq_answer">
-          <p class="text8">Стоимость зависит от площади помещения, стиля и уровня детализации проекта. Мы предлагаем несколько пакетов — от базового до полного сопровождения. Точный расчет вы сможете получить после бесплатной консультации.</p>
-        </div>
+        <div class="faq_answer"><p class="text8">Стоимость зависит от площади помещения, стиля и уровня детализации проекта. Мы предлагаем несколько пакетов — от базового до полного сопровождения. Точный расчет вы сможете получить после бесплатной консультации.</p></div>
       </div>
-      
       <div class="faq_item animate_on_scroll">
         <div class="faq_question">
           <h5 class="headline5">Можно ли заказать только расстановку мебели без полного проекта?</h5>
-          <div class="faq_toggle">
-            <span class="faq_cross"></span>
-          </div>
+          <div class="faq_toggle"><span class="faq_cross"></span></div>
         </div>
-        <div class="faq_answer">
-          <p class="text8">Стоимость зависит от площади помещения, стиля и уровня детализации проекта. Мы предлагаем несколько пакетов — от базового до полного сопровождения. Точный расчет вы сможете получить после бесплатной консультации.</p>
-        </div>
+        <div class="faq_answer"><p class="text8">Стоимость зависит от площади помещения, стиля и уровня детализации проекта. Мы предлагаем несколько пакетов — от базового до полного сопровождения. Точный расчет вы сможете получить после бесплатной консультации.</p></div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- Interior -->
 <section class="interior_design">
   <div class="container">
     <h2 class="interior_title headline2 animate_on_scroll">Дизайн интерьеров и мебель для вашего пространства</h2>
@@ -352,44 +496,53 @@
         <br><br>
       Мы работаем в разных стилях: от современного минимализма и скандинавской простоты до классики и арт-деко. Наши специалисты помогут подобрать оптимальные решения для квартир, загородных домов, офисов и коммерческих помещений.</p>
       <div class="image_content animate_on_scroll">
-        <img src="assets/img/category1.png" alt="">
+        <img src="assets/img/coop.png" alt="">
       </div>
     </div>
   </div>
 </section>
 
-
 <section class="turnkey">
-<div class="container">
-  <h2 class="turnkey_title headline2 animate_on_scroll">Полная комплектация под ключ</h2>
-  <div class="turnkey_content animate_on_scroll">
-    <div class="turnkey_description">
-        <p class="text7">Мы обеспечиваем все этапы создания интерьера — от дизайна до реализации. Подберем материалы, мебель и аксессуары, чтобы ваш проект был завершённым и функциональным. Также у нас предусмотрена рассрочка на все виды услуг!</p>
-        <span class="soc_group">
-          <p class="text_social">напишите нам</p>
-          <a href="" class="soc_icon"><img src="assets/img/telegramIcon.svg" alt=""></a>
-          <a href="" class="soc_icon"><img src="assets/img/WhatsAppIcon.svg" alt=""></a>
-        </span>
-    </div>
-    <form class="turnkey_form">
+  <div class="container">
+    <h2 class="turnkey_title headline2 animate_on_scroll">Полная комплектация под ключ</h2>
+    <div class="turnkey_content animate_on_scroll">
+      <div class="turnkey_description">
+          <p class="text7">Мы обеспечиваем все этапы создания интерьера — от дизайна до реализации. Подберем материалы, мебель и аксессуары, чтобы ваш проект был завершённым и функциональным. Также у нас предусмотрена рассрочка на все виды услуг!</p>
+          <span class="soc_group">
+            <p class="text_social">напишите нам</p>
+            <a href="#" class="soc_icon"><img src="assets/img/telegramIcon.svg" alt="Telegram"></a>
+            <a href="#" class="soc_icon"><img src="assets/img/WhatsAppIcon.svg" alt="WhatsApp"></a>
+          </span>
+      </div>
+
+      <form class="turnkey_form" method="post" enctype="multipart/form-data">
         <div class="form_group">
-            <input type="text" id="name" placeholder="Ваше имя" required>
+          <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+          <div class="field_error" data-for="name" style="display:none;color:#c00;font-size:0.9em;"></div>
         </div>
         <div class="form_group">
-            <input type="tel" id="phone" placeholder="Ваш телефон" required>
+          <input type="tel" id="phone" name="phone" placeholder="Ваш телефон" required>
+           <div class="field_error" data-for="phone" style="display:none;color:#c00;font-size:0.9em;"></div>
         </div>
         <div class="check">
-            <input type="checkbox" required><p class="privacy_policy">Отправляя форму, я соглашаюсь с политикой конфиденциальности</p>
+          <label class="privacy_policy">
+            <input type="checkbox" name="privacy" required>
+            Отправляя форму, я соглашаюсь с политикой конфиденциальности
+          </label>
+          <div class="field_error" data-for="privacy" style="display:none;color:#c00;font-size:0.9em;"></div>
         </div>
+
+        <div id="inquiry_form_status" style="display:none; margin-bottom:12px;"></div>
         <button type="submit" class="form_button">Связаться с нами</button>
-    </form>
+      </form>
+
       <span class="soc_group">
         <p class="text_social">напишите нам</p>
-        <a href="" class="soc_icon"><img src="assets/img/telegramIcon.svg" alt=""></a>
-        <a href="" class="soc_icon"><img src="assets/img/WhatsAppIcon.svg" alt=""></a>
+        <a href="#" class="soc_icon"><img src="assets/img/telegramIcon.svg" alt="Telegram"></a>
+        <a href="#" class="soc_icon"><img src="assets/img/WhatsAppIcon.svg" alt="WhatsApp"></a>
       </span>
+    </div>
   </div>
-</div>
 </section>
 
 <footer class="footer">
@@ -399,35 +552,85 @@
           <a href="index.html" class="footer_logo">
               <img src="assets/img/logo.svg" alt="Mobiarre">
           </a>
-          <a href="privacy.html" class="footer_privacy_link">Политика конфиденциальности</a>
-          </div>
-          <nav class="footer_nav">
-              <a href="catalog.html" class="footer_link">Каталог</a>
-              <a href="about.html" class="footer_link">О компании</a>
-              <a href="projects.html" class="footer_link">Наши проекты</a>
-          </nav>
-          <nav class="footer_nav">
-              <a href="blog.html" class="footer_link">Блог</a>
-              <a href="#contacts" class="footer_link">Контакты</a>
-              <a href="cooperation.html" class="footer_link">Сотрудничество</a>
-          </nav>
-          <div class="footer_socials">
-              <a href="#" class="footer_link">Whatsapp</a>
-              <a href="#" class="footer_link">Telegram</a>
-              <a class="footer_developer" href="https://kant.studio" target="_blank">
-              <span>Разработка сайта:</span>
-              <img src="assets/img/KantLogo.svg" alt=""></a>
-          </div>
+          <a href="#" class="footer_privacy_link">Политика конфиденциальности</a>
+        </div>
+        <nav class="footer_nav">
+          <div class="footer_nav_title">Каталог</div>
+          <a href="catalog.html" class="footer_link">Гостиные</a>
+          <a href="catalog.html" class="footer_link">Кухни</a>
+          <a href="catalog.html" class="footer_link">Гардеробные</a>
+          <a href="catalog.html" class="footer_link">Мягкая мебель</a>
+          <a href="catalog.html" class="footer_link">Кровати</a>
+        </nav>
+        <nav class="footer_nav">
+          <div class="footer_nav_title">Разделы</div>
+          <a href="about.html" class="footer_link">О компании</a>
+          <a href="contacts.html" class="footer_link">Контакты</a>
+          <a href="cooperation.html" class="footer_link">Сотрудничество</a>
+          <a href="blog.html" class="footer_link">Блог</a>
+          <a href="projects.html" class="footer_link">Наши проекты</a>
+        </nav>
+        <div class="footer_socials">
+          <div class="footer_nav_title">Соцсети</div>
+          <a href="#" class="footer_link">Telegram</a>
+          <a href="#" class="footer_link">Вконтакте</a>
+          <a class="footer_developer mobile_developer" href="https://kant.studio" target="_blank">
+            <span>Разработка сайта:</span>
+            <img src="assets/img/KantLogo.svg" alt="KANT.studio">
+          </a>
+        </div>
       </div>
       <div class="footer_bottom">
-        <a href="privacy.html" class="footer_privacy_link">Политика конфиденциальности</a>
-
-        <a class="footer_developer" href="https://kant.studio" target="_blank">
-        <span>Разработка сайта:</span>
-        <img src="assets/img/KantLogo.svg" alt=""></a>
+        <a href="#" class="footer_privacy_link">Политика конфиденциальности</a>
+        <a class="footer_developer desktop_developer" href="https://kant.studio" target="_blank">
+          <span>Разработка сайта:</span>
+          <img src="assets/img/KantLogo.svg" alt="KANT.studio">
+        </a>
       </div>
   </div>
 </footer> 
-<script src="assets/js/script.js" defer></script>
+
+<script src="assets/js/script.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() 
+{
+  let scrollButton = document.getElementById('scrollToCategories');
+  let categoriesSection = document.getElementById('categories-container');
+    
+  if (scrollButton && categoriesSection) 
+  {
+    scrollButton.addEventListener('click', function(e) 
+    {
+      e.preventDefault();
+
+      if (window.location.hash) {
+        history.replaceState(null, null, ' ');
+      }
+      
+      categoriesSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+  }
+
+  let socialsTrigger = document.querySelector('.hero_socials_trigger');
+  let socialsWrapper = document.querySelector('.hero_socials_wrapper');
+  
+  if (socialsTrigger && socialsWrapper) {
+    socialsTrigger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      socialsWrapper.classList.toggle('active');
+    });
+    
+    document.addEventListener('click', function(e) {
+      if (!socialsWrapper.contains(e.target)) {
+        socialsWrapper.classList.remove('active');
+      }
+    });
+  }
+});
+</script>
 </body>
 </html>
+
